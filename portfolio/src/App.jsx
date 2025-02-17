@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './App.css'
 // Import section files
 import AboutMe from './sections/AboutMe';
@@ -16,16 +15,31 @@ import Footer from './components/Footer';
 // Begin App component
 function App() {
   const [currentPage, setCurrentPage] = useState('AboutMe')
+  const renderPage = () => {
+    if (currentPage === 'AboutMe') {
+      return <AboutMe />;
+    } else if (currentPage === 'ContactMe') {
+      return <ContactMe />;
+    } else if (currentPage === 'Portfolio') {
+      return <Portfolio />;
+    }
+  };
+
   return (
-    <>
+    <Router>
     <header>
       <Header />
-      <Navigation />
+      <nav>
+      <Navigation setCurrentPage={setCurrentPage} />
+      </nav>
     </header>
+    <main>
+      {renderPage()}
+    </main>
      <footer>
       <Footer />
      </footer>
-    </>
+    </Router>
   )
 }
 
