@@ -1,39 +1,46 @@
-import Nav from 'react-bootstrap/Nav';
-import { useLocation } from 'react-router-dom';
-import { LinkContainer } from 'react-router-bootstrap';
+import { Nav } from 'react-bootstrap';
+import { Link, useLocation } from 'react-router-dom';
 
 function Navigation() {
     const currentPage = useLocation().pathname;
 
     return (
-        <Nav className="justify-content-end" variant="tabs" defaultActiveKey="/home">
+        <Nav className="justify-content-end" variant="tabs" defaultActiveKey="/">
             <Nav.Item>
-                <LinkContainer to="/home">
-                    <Nav.Link className={currentPage === '/home' ? 'nav-link active' : 'nav-link'}>
-                        About Me
-                    </Nav.Link>
-                </LinkContainer>
+                <Nav.Link
+                    as={Link}
+                    to="/about"
+                    className={currentPage === '/about' ? 'nav-link active' : 'nav-link'}
+                >
+                    About Me
+                </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <LinkContainer to="/Portfolio">
-                    <Nav.Link className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}>
-                        Portfolio
-                    </Nav.Link>
-                </LinkContainer>
+                <Nav.Link
+                    as={Link}
+                    to="/portfolio"
+                    className={currentPage === '/portfolio' ? 'nav-link active' : 'nav-link'}
+                >
+                    Portfolio
+                </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <LinkContainer to="/ContactMe">
-                    <Nav.Link className={currentPage === '/ContactMe' ? 'nav-link active' : 'nav-link'}>
-                        Contact Me
-                    </Nav.Link>
-                </LinkContainer>
+                <Nav.Link
+                    as={Link}
+                    to="/contact"
+                    className={currentPage === '/contact' ? 'nav-link active' : 'nav-link'}
+                >
+                    Contact Me
+                </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <LinkContainer to="/Resume">
-                    <Nav.Link className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}>
-                        View My Resume
-                    </Nav.Link>
-                </LinkContainer>
+                <Nav.Link
+                    as={Link}
+                    to="/resume"
+                    className={currentPage === '/resume' ? 'nav-link active' : 'nav-link'}
+                >
+                    View My Resume
+                </Nav.Link>
             </Nav.Item>
         </Nav>
     );
