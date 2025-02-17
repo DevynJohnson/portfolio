@@ -1,9 +1,8 @@
-import React from 'react';
 import Navigation from './Navigation';
 function Header() {
     return (
-        <header>
-            <h1>My Portfolio</h1>
+        <header className="justify-content-start">
+            <h1>Devyn Johnson - Full Stack Developer</h1>
             <nav>
                 <Navigation/>
             </nav>
