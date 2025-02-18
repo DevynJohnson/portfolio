@@ -5,12 +5,17 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: 272932;
+  background-color: #272932;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --background-color: #272932;
+  --secondary-color: #4d7ea8;
+  --tertiary-color: #b6c2d9;
+  --accent-color: #828489;
 }
 
 a {
@@ -28,6 +33,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--secondary-color)
 }
 
 h1 {

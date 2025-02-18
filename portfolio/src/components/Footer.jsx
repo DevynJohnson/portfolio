@@ -7,27 +7,38 @@ import linkedinLogo from '../images/linkedinLogo.svg';
 import stackoverflowLogo from '../images/stackoverflowLogo.svg';
 
 function Footer() {
+
     return (
-        <footer>
+
+        <footer className="d-flex align-items-center justify-content-center py-4">
+            
             <Container>
-                <Row className="justify-content-center">
-                    <Col xs={4} md={2} className="text-center">
+
+                <Row className="justify-content-center align-items-center text-center">
+                    
+                    <Col xs={4} md={2} className="d-flex align-items-center justify-content-center">
                         <a href="https://github.com/DevynJohnson">
-                            <Image src={githubLogo} height='80px' width='80px' roundedCircle />
+                            <Image alt="github logo" src={githubLogo} height="60" width="60" roundedCircle />
                         </a>
                     </Col>
-                    <Col xs={4} md={2} className="text-center">
+                    
+                    <Col xs={4} md={2} className="d-flex align-items-center justify-content-center">
                         <a href="https://www.linkedin.com/in/devyn-johnson-a5259213b/">
-                            <Image src={linkedinLogo} height='100px' width='100px' roundedCircle />
+                            <Image alt="linkedin logo" src={linkedinLogo} height="75" width="75" roundedCircle />
                         </a>
                     </Col>
-                    <Col xs={4} md={2} className="text-center">
+                    
+                    <Col xs={4} md={2} className="d-flex align-items-center justify-content-center">
                         <a href="https://stackoverflow.com/users/27557869/devyn-johnson">
-                            <Image src={stackoverflowLogo} height='200px' width='200px' roundedCircle />
+                            <Image alt="stack overflow logo" src={stackoverflowLogo} height="150" width="150" roundedCircle />
                         </a>
+                    
                     </Col>
+                
                 </Row>
+            
             </Container>
+
         </footer>
     );
 }
