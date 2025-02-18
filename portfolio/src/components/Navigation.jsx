@@ -5,7 +5,7 @@ function Navigation() {
     const currentPage = useLocation().pathname;
 
     return (
-        <Nav className="justify-content-end" variant="tabs" defaultActiveKey="/">
+        <Nav className="justify-content-center" variant="tabs" defaultActiveKey="/">
             <Nav.Item>
                 <Nav.Link
                     as={Link}

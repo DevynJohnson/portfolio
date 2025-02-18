@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -41,6 +41,37 @@
   color: #888;
 }
 
+header {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.header-background {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Set a fixed height for the header */
+  background-size: cover; /* Ensure the image covers the header area */
+  background-position: center; /* Center the image */
+  overflow: hidden;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1; /* Ensure the Navbar is on top of the image */
+}
+
+footer {
+  padding: 2rem 0;
+  width: 100%;
+  background-color: #242424; /* Set your desired background color */
+  color: rgba(255, 255, 255, 0.87); /* Set your desired text color */
+  text-align: center;
+}
+
 footer .row {
   display: flex;
   justify-content: space-between;
@@ -51,4 +82,12 @@ footer .col {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer img {
+  transition: filter 0.3s ease; /* Add a smooth transition effect to the image links */
+}
+
+footer img:hover {
+  filter: brightness(.5); /* Adjust the brightness of image links on hover to indicate to user that it is clickable */
 }
