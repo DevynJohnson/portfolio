@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 // Begin App component
 function App() {
   return (
-    <>
+    <div id="app-container">
       <header>
         <Header />
       </header>
@@ -18,7 +18,7 @@ function App() {
       <footer>
         <Footer />
       </footer>
-    </>
+    </div>
   );
 }
 

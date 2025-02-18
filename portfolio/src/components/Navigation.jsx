@@ -9,8 +9,8 @@ function Navigation() {
             <Nav.Item>
                 <Nav.Link
                     as={Link}
-                    to="/about"
-                    className={currentPage === '/about' ? 'nav-link active' : 'nav-link'}
+                    to="/"
+                    className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
                 >
                     About Me
                 </Nav.Link>
