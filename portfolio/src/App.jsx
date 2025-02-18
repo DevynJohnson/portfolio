@@ -3,7 +3,7 @@ import './App.css';
 // Import component files
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Navigation from './components/Navigation'; // Make sure to import Navigation
+
 
 // Begin App component
 function App() {
@@ -11,7 +11,6 @@ function App() {
     <>
       <header>
         <Header />
-        <Navigation />
       </header>
       <main>
         <Outlet />
