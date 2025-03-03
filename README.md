@@ -15,9 +15,13 @@ This application is designed to be viewed using a web browser.
 
 <ul>
 <li><a href="https://www.npmjs.com/package/axios">axios</a></li>
-<li><a href="https://www.npmjs.com/package/bootstrap">bootstrap</a></li>
+<li><a href="https://www.npmjs.com/package/react-bootstrap">react-bootstrap</a></li>
 <li><a href="https://www.npmjs.com/package/dotenv">dotenv</a></li>
 </ul>
+
+<p>This application uses the following third-party tools:</p>
+<ul>
+<li><a href="https://vite.dev/">Vite</a></li>
 
 <p>This application is hosted using <a href="https://app.netlify.com/">Netlify</a>.
 
