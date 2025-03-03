@@ -3,6 +3,7 @@ import './App.css';
 // Import component files
 import Header from './components/Header';
 import Footer from './components/Footer';
+import './styles/AboutMe.css';
 
 
 // Begin App component
