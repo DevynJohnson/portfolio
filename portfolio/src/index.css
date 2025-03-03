@@ -5,22 +5,22 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #272932;
+  background-color: #153131;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --background-color: #272932;
-  --secondary-color: #4d7ea8;
-  --tertiary-color: #b6c2d9;
-  --accent-color: #828489;
+  --background-color: #153131;
+  --secondary-color: #FCDDBC;
+  --tertiary-color: #45CB85;
+  --accent-color: #1098F7;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #1098F7;
   text-decoration: inherit;
 }
 a:hover {

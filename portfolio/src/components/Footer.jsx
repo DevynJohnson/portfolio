@@ -17,19 +17,19 @@ function Footer() {
                 <Row className="justify-content-center align-items-center text-center">
                     
                     <Col xs={4} md={2} className="d-flex align-items-center justify-content-center">
-                        <a href="https://github.com/DevynJohnson">
+                        <a href="https://github.com/DevynJohnson"target="_blank">
                             <Image alt="github logo" src={githubLogo} height="60" width="60" roundedCircle />
                         </a>
                     </Col>
                     
                     <Col xs={4} md={2} className="d-flex align-items-center justify-content-center">
-                        <a href="https://www.linkedin.com/in/devyn-johnson-a5259213b/">
+                        <a href="https://www.linkedin.com/in/devyn-johnson-a5259213b/"target="_blank">
                             <Image alt="linkedin logo" src={linkedinLogo} height="75" width="75" roundedCircle />
                         </a>
                     </Col>
                     
                     <Col xs={4} md={2} className="d-flex align-items-center justify-content-center">
-                        <a href="https://stackoverflow.com/users/27557869/devyn-johnson">
+                        <a href="https://stackoverflow.com/users/27557869/devyn-johnson"target="_blank">
                             <Image alt="stack overflow logo" src={stackoverflowLogo} height="150" width="150" roundedCircle />
                         </a>
                     
