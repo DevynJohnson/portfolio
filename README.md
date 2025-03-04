@@ -1,10 +1,10 @@
-# portfolio [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# portfolio [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Netlify Status](https://api.netlify.com/api/v1/badges/344ea580-fe9c-4dd8-93e7-ff7e13ae6804/deploy-status)](https://app.netlify.com/sites/devynjohnsonportfolio/deploys)
 
 ## Description
 An online portfolio to share my previous work and projects with the development community, including prospective employers and clients. 
 
 ## Installation
-No installation is requried to use this application, it is designed to be accessed through a web broswer. It can be accessed at <a href="#">INSERT LINK WHEN DEPLOYED</a>.
+No installation is requried to use this application, it is designed to be accessed through a web broswer. It can be accessed at <a href="https://devynjohnsonportfolio.netlify.app">https://devynjohnsonportfolio.netlify.app</a>.
 
 ## Usage
 This application is designed to be viewed using a web browser.
