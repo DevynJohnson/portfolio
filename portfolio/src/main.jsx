@@ -7,8 +7,8 @@ import './index.css';
 import App from './App.jsx';
 import Error from './sections/Error.jsx';
 import AboutMe from './sections/AboutMe.jsx';
-import ContactMe from './sections/ContactMe.jsx';
-import Portfolio from './sections/Portfolio.jsx';
+import ContactMe from './sections/contactMe.jsx';
+import Portfolio from './sections/portfolio.jsx';
 import Resume from './sections/Resume.jsx';
 
 const router = createBrowserRouter([
