@@ -6,7 +6,7 @@ import './index.css';
 
 import App from './App.jsx';
 import Error from './sections/Error.jsx';
-import AboutMe from './sections/AboutMe.jsx';
+import AboutMe from './sections/aboutMe.jsx';
 import ContactMe from './sections/contactMe.jsx';
 import Portfolio from './sections/portfolio.jsx';
 import Resume from './sections/Resume.jsx';
