@@ -198,6 +198,20 @@ footer img:hover {
   padding: 5px;
 }
 
+.contactFormContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contactFormContainer p {
+  text-align: center;
+  text-shadow: black 1px 2px 2px; /* Add a subtle text shadow */
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
 /* Resume Page Styling */
 .resume {
   background-color: var(--background-color);
@@ -274,6 +288,37 @@ footer img:hover {
 .desc {
   text-decoration: none;
   font-weight: none;
+}
+
+/* Portfolio Page Styling */
+
+.projectCardImage {
+  width: 100%;
+  height: 400px;
+  object-fit: fill;
+}
+
+.projectCardTitle {
+  color: black;
+  text-shadow: white 1px 2px 2px; /* Add a subtle text shadow */
+}
+
+.projectCardName {
+  color: black;
+
+}
+
+.cardGithubLogo {
+  height: 40px;
+  width: 40px;
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: filter 0.3s ease;
+}
+
+.cardGithubLogo:hover {
+  filter: brightness(2.5);
 }
 
 

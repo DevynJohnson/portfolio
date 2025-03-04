@@ -8,6 +8,7 @@ function frontEndLanguages() {
         <ListGroup.Item>HTML</ListGroup.Item>
         <ListGroup.Item>CSS</ListGroup.Item>
         <ListGroup.Item>JavaScript</ListGroup.Item>
+        <ListGroup.Item>TypeScript</ListGroup.Item>
         <ListGroup.Item>React</ListGroup.Item>
         <ListGroup.Item>Vite</ListGroup.Item>
         <ListGroup.Item>Bootstrap</ListGroup.Item>
@@ -23,6 +24,7 @@ function backEndLanguages() {
       <ListGroup className="listGroupResume" variant="flush">
         <ListGroup.Item>Node.js</ListGroup.Item>
         <ListGroup.Item>Express</ListGroup.Item>
+        <ListGroup.Item>APIs and Routing</ListGroup.Item>
         <ListGroup.Item>postgreSQL</ListGroup.Item>
         <ListGroup.Item>MongoDB</ListGroup.Item>
         <ListGroup.Item>Sequelize</ListGroup.Item>
@@ -45,6 +47,7 @@ function otherTools() {
         <ListGroup.Item>npm</ListGroup.Item>
         <ListGroup.Item>Render</ListGroup.Item>
         <ListGroup.Item>Netlify</ListGroup.Item>
+        <ListGroup.Item>Stack Overflow</ListGroup.Item>
       </ListGroup>
     </Card>
   );
