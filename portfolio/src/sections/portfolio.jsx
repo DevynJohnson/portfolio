@@ -2,21 +2,21 @@ import { Card, Container, Row, Col } from "react-bootstrap";
 import githubDark from "../images/githubDark.svg";
 
 function projectCard1() {
-    return (
-      <div>
+  return (
+    <div>
         <Card className="projectCard" style={{ width: "36rem" }}>
           <Card.Img className="projectCardImage"
             variant="top"
             src="/assets/readmeGenScreenshot.png"
             alt="screenshot of readme generator application"
-          />
+            />
           <Card.Body>
                 <a href="https://github.com/DevynJohnson/readmeGenerator" target="_blank"><img className="cardGithubLogo" src={githubDark} alt="github logo" /></a>
             <Card.Text className="projectCardName">
               <a
                 href="https://github.com/DevynJohnson/readmeGenerator"
                 target="_blank"
-              >
+                >
               README Generator
               </a>
             <Card.Text className="projectCardDescription">
@@ -38,7 +38,7 @@ function projectCard2() {
           variant="top"
           src="/assets/weatherDashboardScreenshot.png"
           alt="screenshot of weather dashboard application"
-        />
+          />
         <Card.Body>
               <a href="https://github.com/DevynJohnson/weatherDashboard" target="_blank"><img className="cardGithubLogo" src={githubDark} alt="github logo" /></a>
           <Card.Text className="projectCardName">
@@ -66,14 +66,14 @@ function projectCard3() {
           variant="top"
           src="/assets/rpsScreenshot.png"
           alt="screenshot of rock paper scissors application"
-        />
+          />
         <Card.Body>
               <a href="https://github.com/DevynJohnson/RockPaperScissors" target="_blank"><img className="cardGithubLogo" src={githubDark} alt="github logo" /></a>
           <Card.Text className="projectCardName">
             <a
               href="https://weatherdashboard-vgcp.onrender.com/"
               target="_blank"
-            >
+              >
             Rock, Paper, Scissors Showdown
             </a>
           <Card.Text className="projectCardDescription">
@@ -94,14 +94,14 @@ function projectCard4() {
           variant="top"
           src="/assets/vehiclesScreenshot.png"
           alt="screenshot of fun with vehicles application"
-        />
+          />
         <Card.Body>
               <a href="https://github.com/DevynJohnson/funWithVehicles" target="_blank"><img className="cardGithubLogo" src={githubDark} alt="github logo" /></a>
           <Card.Text className="projectCardName">
             <a
               href="https://github.com/DevynJohnson/funWithVehicles"
               target="_blank"
-            >
+              >
             Fun With Vehicles!
             </a>
           <Card.Text className="projectCardDescription">
@@ -122,14 +122,14 @@ function projectCard5() {
           variant="top"
           src="/assets/bookclubScreenshot.png"
           alt="screenshot of bootcamp book club application"
-        />
+          />
         <Card.Body>
               <a href="https://github.com/DevynJohnson/BootcampBookClub" target="_blank"><img className="cardGithubLogo" src={githubDark} alt="github logo" /></a>
           <Card.Text className="projectCardName">
             <a
               href="https://devynjohnson.github.io/BootcampBookClub/"
               target="_blank"
-            >
+              >
             Bootcamp Book Club
             </a>
           <Card.Text className="projectCardDescription">
@@ -150,7 +150,7 @@ function projectCard6() {
           variant="top"
           src="/assets/realtorScreenshot.png"
           alt="screenshot of professional realtor website"
-        />
+          />
         <Card.Body>
               <a href="https://github.com/DevynJohnson/Real-Estate-Website" target="_blank"><img className="cardGithubLogo" src={githubDark} alt="github logo" /></a>
           <Card.Text className="projectCardName">
@@ -169,10 +169,11 @@ function projectCard6() {
     </div>
   );
 }
-
 function Portfolio() {
   return (
     <div>
+      <h1 style={{ textAlign: "center" }}>Check out my work!</h1>
+      <h2 style={{ textAlign: "center" }}>Click on the project name to view the deployed project if applicable, or click the Github logo to see the repository.</h2>
       <Container>
         <Row className="mb-4">
           <Col md={6} className="px-3">{projectCard1()}</Col>
