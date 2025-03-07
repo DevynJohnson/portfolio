@@ -172,8 +172,8 @@ function projectCard6() {
 function Portfolio() {
   return (
     <div>
-      <h1 style={{ textAlign: "center" }}>Check out my work!</h1>
-      <h2 style={{ textAlign: "center" }}>Click on the project name to view the deployed project if applicable, or click the Github logo to see the repository.</h2>
+      <h2 style={{ textAlign: "center" }}>Check out my work!</h2>
+      <h4 style={{ textAlign: "center" }}>Click on the project name to view the deployed project if applicable, or click the Github logo to see the repository.</h4>
       <Container>
         <Row className="mb-4">
           <Col md={6} className="px-3">{projectCard1()}</Col>
