@@ -183,19 +183,19 @@ function Portfolio() {
       <h2>Check out my work!</h2>
       <h5 style={{ textAlign: "center" }}>Click on the project name to view the deployed project if applicable, or click the Github logo to see the repository.</h5>
       <Container fluid>
-        <Row>
-          <Col md={6} className="mb-4">{projectCard1()}</Col>
-          <Col md={6} className="mb-4">{projectCard2()}</Col>
-        </Row>
-        <Row>
-          <Col md={6} className="mb-4">{projectCard3()}</Col>
-          <Col md={6} className="mb-4">{projectCard4()}</Col>
-        </Row>
-        <Row>
-          <Col md={6} className="mb-4">{projectCard5()}</Col>
-          <Col md={6} className="mb-4">{projectCard6()}</Col>
-        </Row>
-      </Container>
+  <Row className="justify-content-center">
+    <Col lg={6} md={6} sm={12} className="d-flex justify-content-center mb-4">{projectCard1()}</Col>
+    <Col lg={6} md={6} sm={12} className="d-flex justify-content-center mb-4">{projectCard2()}</Col>
+  </Row>
+  <Row className="justify-content-center">
+    <Col lg={6} md={6} sm={12} className="d-flex justify-content-center mb-4">{projectCard3()}</Col>
+    <Col lg={6} md={6} sm={12} className="d-flex justify-content-center mb-4">{projectCard4()}</Col>
+  </Row>
+  <Row className="justify-content-center">
+    <Col lg={6} md={6} sm={12} className="d-flex justify-content-center mb-4">{projectCard5()}</Col>
+    <Col lg={6} md={6} sm={12} className="d-flex justify-content-center mb-4">{projectCard6()}</Col>
+  </Row>
+</Container>
     </div>
   );
 }

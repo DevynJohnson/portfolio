@@ -3,7 +3,7 @@ import LinkedInProfilePic from "../images/LinkedInProfilePic.jpg";
 function AboutMe() {
   return (
     <div>
-      <Container>
+      <Container className="profilePicContainer">
         <Row className="justify-content-md-center">
           <Col xs={6} md={4}>
             <Image
