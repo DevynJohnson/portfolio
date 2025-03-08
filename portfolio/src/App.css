@@ -219,6 +219,12 @@ footer img:hover {
   text-align: center;
 }
 
+.resumeButton {
+ text-align: center;
+  background-color: var(--accent-color);
+  outline: none;
+}
+
 .resume h3 {
   text-align: center;
   margin-top: 10px;

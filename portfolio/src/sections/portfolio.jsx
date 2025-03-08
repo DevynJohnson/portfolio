@@ -8,7 +8,7 @@ function projectCard1() {
       <Card className="projectCard" style={{ width: "36rem" }}>
         <Card.Img className="projectCardImage"
           variant="top"
-          src="/assets/statTrickScreenshot.png"
+          src="/assets/statTrick.png"
           alt="screenshot of stattrick application"
           />
         <Card.Body>
