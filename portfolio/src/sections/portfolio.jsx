@@ -1,35 +1,36 @@
 import { Card, Container, Row, Col } from "react-bootstrap";
 import githubDark from "../images/githubDark.svg";
 
+
 function projectCard1() {
   return (
     <div>
-        <Card className="projectCard" style={{ width: "36rem" }}>
-          <Card.Img className="projectCardImage"
-            variant="top"
-            src="/assets/readmeGenScreenshot.png"
-            alt="screenshot of readme generator application"
-            />
-          <Card.Body>
-                <a href="https://github.com/DevynJohnson/readmeGenerator" target="_blank"><img className="cardGithubLogo" src={githubDark} alt="github logo" /></a>
-            <Card.Text className="projectCardName">
-              <a
-                href="https://github.com/DevynJohnson/readmeGenerator"
-                target="_blank"
-                >
-              README Generator
-              </a>
-            <Card.Text className="projectCardDescription">
-              An application allowing users to easily generate a professional README file for their projects.
-    
-            </Card.Text>
+      <Card className="projectCard" style={{ width: "36rem" }}>
+        <Card.Img className="projectCardImage"
+          variant="top"
+          src="/assets/statTrickScreenshot.png"
+          alt="screenshot of stattrick application"
+          />
+        <Card.Body>
+              <a href="https://github.com/AMShegstad/StatTrick" target="_blank"><img className="cardGithubLogo" src={githubDark} alt="github logo" /></a>
+          <Card.Text className="projectCardName">
+            <a
+              href="https://stattrick.onrender.com/"
+              target="_blank"
+              >
+            Stat-Trick
+            </a>
+          <Card.Text className="projectCardDescription">
+            A full-stack application created by a team of 4 developers that allows users to track statistics for their favorite NHL teams and players.
+            <br></br>
+            Built using Vite + React + TypeScript, Node.js, Express, postgreSQL, and user authentication with jsonwebtoken. Deployed on Render.
           </Card.Text>
-            </Card.Body>
-            </Card>
-      </div>
-    );
-  }
-
+        </Card.Text>
+          </Card.Body>
+          </Card>
+    </div>
+  );
+}
 function projectCard2() {
   return (
     <div>
@@ -45,11 +46,13 @@ function projectCard2() {
             <a
               href="https://weatherdashboard-vgcp.onrender.com/"
               target="_blank"
-            >
+              >
             Weather Dashboard
             </a>
           <Card.Text className="projectCardDescription">
             An application allowing users to search for a city to view the current weather, plus a 5-day forecast.
+            <br></br>
+            Key technologies include HTML, CSS, JavaScript, Express, OpenWeather API, and is deployed on Render.
           </Card.Text>
         </Card.Text>
           </Card.Body>
@@ -77,7 +80,10 @@ function projectCard3() {
             Rock, Paper, Scissors Showdown
             </a>
           <Card.Text className="projectCardDescription">
-            A web-based game of Rock, Paper, Scissors. Play against the computer and see if you can win! Uses local storage to keep track of your score.
+            A web-based game of Rock, Paper, Scissors. Play against the computer and see if you can win!
+            <br></br>
+            Key technologies include HTML, Bootstrap CSS, JavaScript and local storage.
+
           </Card.Text>
         </Card.Text>
           </Card.Body>
@@ -89,30 +95,32 @@ function projectCard3() {
 function projectCard4() {
   return (
     <div>
-      <Card className="projectCard" style={{ width: "36rem" }}>
-        <Card.Img className="projectCardImage"
-          variant="top"
-          src="/assets/vehiclesScreenshot.png"
-          alt="screenshot of fun with vehicles application"
-          />
-        <Card.Body>
-              <a href="https://github.com/DevynJohnson/funWithVehicles" target="_blank"><img className="cardGithubLogo" src={githubDark} alt="github logo" /></a>
-          <Card.Text className="projectCardName">
-            <a
-              href="https://github.com/DevynJohnson/funWithVehicles"
-              target="_blank"
-              >
-            Fun With Vehicles!
-            </a>
-          <Card.Text className="projectCardDescription">
-            A command-line application utilizing TypeScript interfaces and classes to create vehicles, and select interactions from a list unique to vehicle types.
+        <Card className="projectCard" style={{ width: "36rem" }}>
+          <Card.Img className="projectCardImage"
+            variant="top"
+            src="/assets/readmeGenScreenshot.png"
+            alt="screenshot of readme generator application"
+            />
+          <Card.Body>
+                <a href="https://github.com/DevynJohnson/readmeGenerator" target="_blank"><img className="cardGithubLogo" src={githubDark} alt="github logo" /></a>
+            <Card.Text className="projectCardName">
+              <a
+                href="https://github.com/DevynJohnson/readmeGenerator"
+                target="_blank"
+                >
+              README Generator
+              </a>
+            <Card.Text className="projectCardDescription">
+              A command-line application allowing users to easily generate a professional README file for their projects.
+              <br></br>
+              Key technologies include JavaScript, Node.js, and the Inquirer npm package.
+            </Card.Text>
           </Card.Text>
-        </Card.Text>
-          </Card.Body>
-          </Card>
-    </div>
-  );
-}
+            </Card.Body>
+            </Card>
+      </div>
+    );
+  }
 
 function projectCard5() {
   return (
@@ -171,21 +179,21 @@ function projectCard6() {
 }
 function Portfolio() {
   return (
-    <div>
-      <h2 style={{ textAlign: "center" }}>Check out my work!</h2>
-      <h4 style={{ textAlign: "center" }}>Click on the project name to view the deployed project if applicable, or click the Github logo to see the repository.</h4>
-      <Container>
-        <Row className="mb-4">
-          <Col md={6} className="px-3">{projectCard1()}</Col>
-          <Col md={6} className="px-3">{projectCard2()}</Col>
+    <div className="portfolioPage">
+      <h2>Check out my work!</h2>
+      <h5 style={{ textAlign: "center" }}>Click on the project name to view the deployed project if applicable, or click the Github logo to see the repository.</h5>
+      <Container fluid>
+        <Row>
+          <Col md={6} className="mb-4">{projectCard1()}</Col>
+          <Col md={6} className="mb-4">{projectCard2()}</Col>
         </Row>
-        <Row className="mb-4">
-        <Col md={6} className="px-3">{projectCard3()}</Col>
-        <Col md={6} className="px-3">{projectCard4()}</Col>
+        <Row>
+          <Col md={6} className="mb-4">{projectCard3()}</Col>
+          <Col md={6} className="mb-4">{projectCard4()}</Col>
         </Row>
-        <Row className="mb-4">
-          <Col md={6} className="px-3">{projectCard5()}</Col>
-          <Col md={6} className="px-3">{projectCard6()}</Col>
+        <Row>
+          <Col md={6} className="mb-4">{projectCard5()}</Col>
+          <Col md={6} className="mb-4">{projectCard6()}</Col>
         </Row>
       </Container>
     </div>

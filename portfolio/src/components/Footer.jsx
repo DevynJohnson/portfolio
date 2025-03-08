@@ -18,19 +18,19 @@ function Footer() {
                     
                     <Col xs={4} md={2} className="d-flex align-items-center justify-content-center">
                         <a href="https://github.com/DevynJohnson"target="_blank">
-                            <Image alt="github logo" src={githubLogo} height="60" width="60" roundedCircle />
+                            <Image alt="github logo" src={githubLogo} height="30" width="30" roundedCircle />
                         </a>
                     </Col>
                     
                     <Col xs={4} md={2} className="d-flex align-items-center justify-content-center">
                         <a href="https://www.linkedin.com/in/devyn-johnson-a5259213b/"target="_blank">
-                            <Image alt="linkedin logo" src={linkedinLogo} height="75" width="75" roundedCircle />
+                            <Image alt="linkedin logo" src={linkedinLogo} height="30" width="30" roundedCircle />
                         </a>
                     </Col>
                     
                     <Col xs={4} md={2} className="d-flex align-items-center justify-content-center">
                         <a href="https://stackoverflow.com/users/27557869/devyn-johnson"target="_blank">
-                            <Image alt="stack overflow logo" src={stackoverflowLogo} height="150" width="150" roundedCircle />
+                            <Image alt="stack overflow logo" src={stackoverflowLogo} height="75" width="75" roundedCircle />
                         </a>
                     
                     </Col>

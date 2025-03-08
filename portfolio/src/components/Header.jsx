@@ -4,8 +4,7 @@ import headerBackground from '../images/headerBackground.jpg'; // Import the ima
 function Header() {
     return (
         <header className="header-background" style={{ backgroundImage: `url(${headerBackground})` }}>
-            <h1>Devyn Johnson</h1>
-            <h2>Full Stack Developer</h2>
+            <h1>Devyn Johnson - Full Stack Developer</h1>
             <div className="navbar-container">
                 <Navigation /> 
             </div>
