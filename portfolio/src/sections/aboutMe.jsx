@@ -1,5 +1,5 @@
 import { Col, Container, Row, Image } from "react-bootstrap";
-import LinkedInProfilePic from "../../public/assets/linkedinProfilePic.jpg";
+import LinkedInProfilePic from "../images/LinkedInProfilePic.jpg";
 function AboutMe() {
   return (
     <div>
