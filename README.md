@@ -21,11 +21,12 @@ This application is designed to be viewed using a web browser.
 <li><a href="https://www.npmjs.com/package/dotenv">dotenv</a></li>
 </ul>
 
-<p>This application uses the following third-party tools:</p>
+<p>This application was built and deployed using the following third-party tools:</p>
 <ul>
 <li><a href="https://vite.dev/">Vite</a></li>
+<li><a href="https://app.netlify.com/">Netlify</a></li>
+</ul>
 
-<p>This application is hosted using <a href="https://app.netlify.com/">Netlify</a>.
 
 ## License
 MIT License
