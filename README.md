@@ -23,6 +23,7 @@ This application is designed to be viewed using a web browser.
 
 <p>This application was built and deployed using the following third-party tools:</p>
 <ul>
+<li><a href="https://react.dev">React</a></li>
 <li><a href="https://vite.dev/">Vite</a></li>
 <li><a href="https://app.netlify.com/">Netlify</a></li>
 </ul>
