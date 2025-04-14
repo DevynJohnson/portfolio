@@ -1,0 +1,29 @@
+/* About Me Page Styles */
+.aboutMePage {
+  margin: 10px;
+  padding: 5px;
+  color: var(--secondary-color);
+}
+
+/* Common styles for text elements in About Me page */
+.aboutMeText, .aboutMeHeader {
+  text-align: center;
+  text-shadow: black 1px 2px 2px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+/* About Me header specific */
+.aboutMeHeader {
+  margin-bottom: 20px;
+}
+
+/* About Me photo styling */
+.aboutMePhoto {
+  display: block;
+  max-width: 250px;
+  border: 3px solid var(--accent-color);
+  border-radius: 10px;
+  margin: 10px auto;
+}

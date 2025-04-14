@@ -1,0 +1,35 @@
+/* Footer Styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  footer .row,
+  footer .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer img {
+    transition: filter 0.3s ease;
+  }
+  
+  footer img:hover {
+    filter: brightness(0.5);
+  }
+  
+  @media (max-width: 768px) {
+    footer {
+      position: relative;
+    }
+  }
+  

@@ -6,6 +6,11 @@
 }
 
 /* Styling For Global Page Elements */
+main {
+  padding-top: 150px; /* Ensure space for fixed header */
+  padding-bottom: 50px; /* Keeps footer from covering content */
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -13,9 +18,8 @@ html, body {
   display: block;
   flex-direction: column;
   font-family: 'Copperplate', 'fantasy', sans-serif;
-}
-
-html, body {
+  width: 100%;
+  overflow-x: auto; /* Allows horizontal scrolling on both sides */
   background-image: url('./images/bodyBackground.jpg');
   background-size: cover; /* Ensures it covers the entire viewport */
   background-attachment: fixed;
@@ -35,82 +39,44 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 125px;
-  color: var(--secondary-color);
+  z-index: 1000;
   display: flex;
   flex-direction: column;
+  justify-content: space-between; /* ensures nav stays at bottom */
   align-items: center;
-  justify-content: center;
-  z-index: 1000;
   padding: 10px 0;
+  min-height: 125px;
+  background-size: cover;
+  background-position: center;
 }
+
+
+.header-background {
+  background-size: cover;
+  background-position: center;
+  /* You may wish to set a minimum height for the header so that the image always displays well */
+  min-height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 header h1 {
-  text-align: center;
-  text-shadow: 3px 1px 1px black; /* Add a subtle text shadow */
-  margin-top: 40px;
-  margin-bottom: 20px;
-  font-family: 'Copperplate', 'fantasy', sans-serif;
-  font-weight: bolder;
+  margin: 0; /* Remove extra margins that might shift the layout */
+  /* Optionally add a top margin if you want some breathing room */
+  margin-top: 10px;
 }
 
-header {
-  position: fixed;
+
+.navbar-container {
   width: 100%;
-  padding: 10px 0;
-}
-
-@media (max-width: 768px) {
-  header {
-    height: auto; /* Adjust for smaller screens */
-    padding: 5px;
-  }
-
-  header h1 {
-    font-size: 20px; /* Reduce font size */
-    margin-top: 10px;
-  }
-}
-
-
-/* Navbar should be at the top inside the header */
-.navbar {
-  top: 0;
-  width: 100%;
-  margin-top: 5px;
-  margin-bottom: 5px; /* Adds space below the Navbar */
-  position: relative;
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap */
   justify-content: center;
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media (max-width: 768px) {
-  main {
-    padding-top: 100px;
-    padding-bottom: 60px;
-  }
-}
-
-@media (max-width: 768px) {
-  footer {
-    position: relative;
-  }
-}
-
-@media (max-width: 768px) {
-  .profile-picture {
-    width: 80%; /* Reduce size for smaller screens */
-    display: block;
-    margin: 0 auto;
-  }
+  align-items: center;
+  margin: 0;
+  margin-bottom: -10px;
 }
 
 /* Custom styling for navigation links */
@@ -141,21 +107,59 @@ header {
   background-color: white; /* Light background on hover */
 }
 
-/* Navbar Styling - Ensure it's centered and keeps Bootstrap tab styles */
-.navbar-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 35px; /* Space between Navbar and h1 */
+@media (max-width: 768px) {
+  header {
+    padding: 5px;
+    min-height: 100px;
+  }
+  
+  header h1 {
+   header h1 {
+    font-size: 20px;
+    margin-top: 5px;
+  }
 }
+
+  .navbar-container {
+    /* You might want to ensure that the Navigation component inside scales or centers correctly */
+    margin-top: 0.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .profilePicContainer {
+      width: 50%;
+      height: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+}
+
+@media (max-width: 512px) {
+  main {
+    padding-top: 130px; /* Increase this value as needed */
+  }
+}
+
 
 /* Ensure tabs stay formatted correctly */
 .nav-tabs {
   border-bottom: 2px solid white;
 }
-
-/* Stack h1 and h2, fade-in animation for both elements */
 
 /* Ensure main content takes up remaining space */
 main {
@@ -201,10 +205,14 @@ footer img:hover {
 }
 
 /* About Me Page Styling */
+
+/* Container remains flex-based and centered */
 .profilePicContainer {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
+  margin-top: 10px;
+  text-align: center; /* Help center inline elements if needed */
 }
 
 .aboutMePage p {
@@ -325,24 +333,48 @@ footer img:hover {
 }
 
 /* Portfolio Page Styling */
-.portfolioPage h2, h5 {
+
+.portfolioPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow-x: auto; /* Allows scrolling left and right */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.portfolioPage h2,
+.portfolioPage h5 {
   text-align: center;
-  text-shadow: black 1px 2px 2px; /* Add a subtle text shadow */
+  text-shadow: black 1px 2px 2px;
   margin-top: 10px;
   margin-bottom: 20px;
   padding: 5px;
 }
 
+/* ProjectCard styles */
 .projectCard {
-  width: 36rem; /* Fixed width for all cards */
-  max-width: 100%; /* Prevents overflow on smaller screens */
-  margin: 0 auto; /* Centers the cards */
+  width: clamp(280px, 80%, 36rem); /* Responsive width */
+  margin: 1rem;
+  flex-shrink: 1; /* Allow the card to shrink if needed */
 }
 
 .projectCardImage {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+  width: 100%;               /* Keeps the image spanning the card's width */
+  max-width: 576px;          /* Optional: prevents it from growing too large */
+  height: 200px;             /* Fixed height to keep consistency */
+  object-fit: cover;         /* Keeps aspect ratio and crops if needed */
+  flex-shrink: 0;            /* Prevents shrinking when space is tight */
+}
+
+/* Container to keep cards responsive */
+.projectCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .projectCardTitle {
@@ -352,7 +384,15 @@ footer img:hover {
 
 .projectCardName {
   color: black;
+}
 
+@media (max-width: 600px) {
+  .projectCard,
+  .projectCardImage {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .cardGithubLogo {
@@ -366,6 +406,22 @@ footer img:hover {
 
 .cardGithubLogo:hover {
   filter: brightness(2.5);
+}
+
+.scrollWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 

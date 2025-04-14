@@ -1,0 +1,96 @@
+/* Resume Page Styles */
+.resume {
+    color: var(--secondary-color);
+  }
+  
+  .resume h3,
+  .resume h5,
+  .resume p,
+  .frontEndHeader,
+  .backEndHeader,
+  .otherToolsHeader,
+  .listGroupResume,
+  .resumeButton,
+  .workHistory,
+  .educationHeader {
+    text-align: center;
+  }
+  
+  .resume h3 {
+    margin: 10px 0;
+    text-decoration: underline;
+  }
+  
+  .resume h5,
+  .resume p {
+    margin: 10px 0;
+  }
+  
+  .techSkillsContainer,
+  .workHistoryContainer,
+  .educationContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .frontEndHeader,
+  .backEndHeader,
+  .otherToolsHeader,
+  .workHistory,
+  .educationHeader {
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 5px;
+  }
+  
+  .listGroupResume {
+    font-weight: bold;
+  }
+  
+  .resumeButton {
+    background-color: var(--accent-color);
+    outline: none;
+  }
+  
+  .space {
+    background-color: var(--accent-color);
+  }
+  
+  .job {
+    text-decoration: underline;
+  }
+  
+  .desc {
+    text-decoration: none;
+    font-weight: normal;
+  }
+
+  /* Centers and bolds the Card Header */
+.workHistory {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Centers and bolds Accordion headers */
+.accordion-button {
+  justify-content: center;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Optional: Ensure the body text looks nice too */
+.accordion-body ul {
+  padding-left: 1.5rem;
+}
+
+.accordion-body li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+  
+  
