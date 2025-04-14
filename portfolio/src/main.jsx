@@ -2,14 +2,15 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import './index.css';
+import './styles/index.css';
 
 
 import App from './App.jsx';
-import Error from './sections/Error.jsx';
-import AboutMe from './sections/aboutMe.jsx';
-import ContactMe from './sections/contactMe.jsx';
-import Portfolio from './sections/portfolio.jsx';
-import Resume from './sections/Resume.jsx';
+import Error from './pages/Error.jsx';
+import AboutMe from './pages/aboutMe.jsx';
+import ContactMe from './pages/contactMe.jsx';
+import Portfolio from './pages/portfolio.jsx';
+import Resume from './pages/Resume.jsx';
 
 const router = createBrowserRouter([
   {

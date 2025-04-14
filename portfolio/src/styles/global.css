@@ -1,0 +1,26 @@
+/* Global styles for html and body */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Copperplate', 'fantasy', sans-serif;
+    overflow-x: hidden;
+    background-image: url('../images/bodyBackground.jpg');
+    background-size: cover; /* Ensures it covers the entire viewport */
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the root fills the entire screen */
+  }
+  
+  /* Styling for the main content */
+  main {
+    flex-grow: 1;
+    padding-top: 170px; /* Adjusted for fixed header */
+    padding-bottom: 80px; /* Prevents overlap with footer */
+  }
+  
