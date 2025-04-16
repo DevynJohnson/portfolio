@@ -3,8 +3,8 @@ import { Button } from "react-bootstrap";
 
 function downloadResume() {
   const link = document.createElement("a");
-  link.href = "/assets/DevynJohnsonResumePDF.pdf"; // Update with the actual path to your resume file
-  link.download = "DevynJohnsonResumePDF.pdf";
+  link.href = "/assets/Devyn_Johnson_Resume_2025.pdf"; // Update with the actual path to your resume file
+  link.download = "Devyn_Johnson_Resume_2025.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
