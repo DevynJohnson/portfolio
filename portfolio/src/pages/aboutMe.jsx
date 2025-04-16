@@ -1,19 +1,14 @@
-import { Col, Container, Row, Image } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 import LinkedInProfilePic from "../images/LinkedInProfilePic.jpg";
 function AboutMe() {
   return (
     <div>
       <Container className="profilePicContainer">
-        <Row className="justify-content-md-center">
-          <Col xs={6} md={4}>
             <Image
-              style={{ textAlign: "center" }}
               src={LinkedInProfilePic}
               alt="photo of devyn johnson"
               thumbnail
             />
-          </Col>
-        </Row>
       </Container>
       <div className="aboutMePage">
         <p>
