@@ -4,13 +4,13 @@ import "../App.css";
 
 const projectData = [
   {
-    imageSrc: "/assets/statTrick.png",
-    imageAlt: "screenshot of stattrick application",
-    githubUrl: "https://github.com/AMShegstad/StatTrick",
-    projectUrl: "https://stattrick.onrender.com/",
-    projectName: "Stat-Trick",
+    imageSrc: "/assets/under_construction.jpg",
+    imageAlt: "under construction sign",
+    githubUrl: "https://github.com/DevynJohnson/virtualPEX",
+    projectUrl: "https://virtualpex.onrender.com",
+    projectName: "Virtual PEX Board",
     projectDescription:
-      "A collaborative full-stack application developed by a team of four using the PERN stack (PostgreSQL, Express, React, Node.js) with TypeScript integration. StatTrick allows users to seamlessly track real-time statistics and standings for their favorite NHL teams and players. The front end was built with Vite and React, while the back end utilized Node.js and Express with secure user authentication implemented via JSON Web Tokens (JWT). The application is fully deployed on Render, offering a responsive and user-friendly experience for hockey enthusiasts.",
+      "A collaborative full-stack application developed by a team of four using the MERN stack (MongoDB, Express, React, Node.js) with JavaScript integration. This virtual PEX (Picture Exchange) board is designed to be used by children who are non-verbal or speech delayed. The application displays a grid of images and corresponding words, allowing children to point out items to express their wants, needs, or feelings and have the name of that item read out loud using text-to-speech. With over 275 words in our database including people, food and beverages, clothing items, verbs, feelings, and more parents and caregivers should be able to find the most common expressions. With plans to expand functionality in the future to include the ability to customize existing cards and to allow users to create their own custom cards, we hope this application can prove useful to families in helping children express themselves.",
   },
   {
     imageSrc: "/assets/weatherDashboardScreenshot.png",
