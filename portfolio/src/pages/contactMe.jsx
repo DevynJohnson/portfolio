@@ -1,6 +1,6 @@
 import { Container } from 'react-bootstrap';
 import { useState } from 'react';
-function contactForm() {
+function ContactForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -23,15 +23,16 @@ function contactForm() {
     <div className='contactForm'>
         <Container className="contactFormContainer">
       <form onSubmit={handleSubmit}>
-        <p><label htmlFor='name'>Name:</label></p>
-        <input type='text' id='name' name='name' value={formData.name} onChange={handleChange} required></input>
-        <p><label htmlFor='email'>Email:</label></p>
-        <input type='email' id='email' name='email' value={formData.email} onChange={handleChange} required></input>
-        <p><label htmlFor='subject'>Subject:</label></p>
-        <input type='text' id='subject' name='subject' value={formData.subject} onChange={handleChange} required></input>
-        <p><label htmlFor='message'>Message:</label></p>
-        <textarea style={{width: '200px', height: '200px'}} id='message' name='message' value={formData.message} onChange={handleChange} required></textarea>
-        <p><button type="submit">Submit</button></p>
+        <p><label htmlFor='name'>What is Your Name?</label></p>
+        <input className="formInput" type='text' id='name' name='name' value={formData.name} onChange={handleChange} required></input>
+        {/* <p><label htmlFor='email'>Email:</label></p>
+        <input type='email' id='email' name='email' value={formData.email} onChange={handleChange} required></input> */}
+        <p><label htmlFor='subject'>What is the subject?</label></p>
+        <input className="formInput" type='text' id='subject' name='subject' value={formData.subject} onChange={handleChange} required></input>
+        <p><label htmlFor='message'>What is your message?</label></p>
+        <textarea className="formInput" style={{width: '100%', height: '200px'}} id='message' name='message' value={formData.message} onChange={handleChange} required></textarea>
+        <p><button type="submit">Send Message From Your Email Client</button></p>
+        *Clicking The Button Will Open a New Window*
       </form>
       </Container>
     </div>
@@ -45,11 +46,10 @@ function ContactMe() {
         collaborating on a project together, or have any questions for me! 
       </h4>
       <h4>
-        You can reach me by <a href="mailto:dljohnson1313@gmail.com" target="_blank"> email, </a>
-        connect with me on <a href="https://www.linkedin.com/in/devyn-johnson-a5259213b/"target="_blank">LinkedIn</a>, or use the form below to easily generate an email message for me.
+        You can connect with me on <a href="https://www.linkedin.com/in/devyn-johnson-a5259213b/"target="_blank">LinkedIn</a>, view my profile at <a href="https://www.github.com/DevynJohnson"target="_blank">Github</a>, or feel free to use the form below to easily create an email. Click the button below to send your form data to your favorite email client and send the message!
       </h4>
       <h4>I look forward to hearing from you!</h4>
-      {contactForm()}
+      {ContactForm()}
     </div>
   );
 }
