@@ -28,7 +28,7 @@
   .projectCardImage {
     width: 100%;
     /* max-width: 576px; */
-    height: 200px;
+    height: auto;
     object-fit: cover;
     flex-shrink: 0;
   }

@@ -16,14 +16,12 @@
     text-align: center;
   }
   
-  .resume h3 {
-    margin: 10px 0;
-    text-decoration: underline;
-  }
-  
+  .resume h3,
   .resume h5,
   .resume p {
     margin: 10px 0;
+    text-decoration: underline;
+    text-shadow: black 2px 1px 1px;
   }
   
   .techSkillsContainer,
@@ -45,6 +43,8 @@
     text-decoration: underline;
     font-size: 20px;
     padding: 5px;
+    text-shadow: black 1px 1px 1px;
+    font-weight: bold;
   }
   
   .listGroupResume {

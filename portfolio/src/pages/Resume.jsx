@@ -66,15 +66,13 @@ function education() {
       <Card.Header className="educationHeader">Education</Card.Header>
       <ListGroup className="listGroupResume" variant="flush">
         <ListGroup.Item>
-          Full Stack Coding Bootcamp, University of Minnesota - April 2025
+          Full Stack Coding Bootcamp, University of Minnesota | 2024 - 2025
         </ListGroup.Item>
         <ListGroup.Item>
-          B.S. Business Management from Western Governors University - March
-          2022
+          B.S. Business Management from Western Governors University | 2018 - 2022
         </ListGroup.Item>
         <ListGroup.Item>
-          High School Diploma from Tartan Senior High School, Oakdale MN - June
-          2006
+          High School Diploma from Tartan Senior High School, Oakdale MN | 2002 - 2006
         </ListGroup.Item>
       </ListGroup>
     </Card>

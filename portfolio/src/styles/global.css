@@ -6,7 +6,7 @@ html, body {
     font-family: 'Copperplate', 'fantasy', sans-serif;
     overflow-x: hidden;
     background-image: url('../images/bodyBackground.jpg');
-    background-size: cover; /* Ensures it covers the entire viewport */
+    background-size: cover;
     background-attachment: fixed;
     background-position: center;
   }
