@@ -12,7 +12,7 @@ No installation is requried to use this application, it is designed to be access
 This application is designed to be viewed using a web browser.
 
 ## Credits
-<p>This project was created by Devyn Johnson. <a href="https://github.com/DevynJohnson">Github</a> | <a href="https://www.linkedin.com/in/devyn-johnson-a5259213b">LinkedIn</a> | <a href="https://devynjohnson.github.io/online-portfolio/">Portfolio</a>.</p>
+<p>This project was created by Devyn Johnson. <a href="https://github.com/DevynJohnson">Github</a> | <a href="https://www.linkedin.com/in/devyn-johnson-a5259213b">LinkedIn</a> | <a href="https://devynjohnsonportfolio.netlify.app/">Portfolio</a>.</p>
 <p>This application uses the following npm packages:</p>
 
 <ul>
