@@ -27,7 +27,7 @@
   
   .projectCardImage {
     width: 100%;
-    max-width: 576px;
+    /* max-width: 576px; */
     height: 200px;
     object-fit: cover;
     flex-shrink: 0;
@@ -58,5 +58,18 @@
       max-width: 100%;
       height: auto;
     }
+  }
+
+  .cardGithubLogo {
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: filter 0.3s ease;
+  }
+  
+  .cardGithubLogo:hover {
+    filter: brightness(2.5);
   }
   
