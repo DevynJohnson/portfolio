@@ -6,7 +6,7 @@ An online portfolio to share my previous work and projects with the development 
 ![Screenshot of Portfolio](/portfolio/public/assets/portfolioScreenshot.png)
 
 ## Installation
-No installation is requried to use this application, it is designed to be accessed through a web broswer. It can be accessed at <a href="https://devynjohnsonportfolio.netlify.app">https://devynjohnsonportfolio.netlify.app</a>.
+No installation is requried to use this application, it is designed to be accessed through a web broswer. It can be accessed at <a href="https://devynjohnson.me">https://devynjohnson.me</a>.
 
 ## Usage
 This application is designed to be viewed using a web browser.
