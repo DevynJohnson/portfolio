@@ -4,8 +4,8 @@ import "../App.css";
 
 const projectData = [
   {
-    imageSrc: "/assets/under_construction.jpg",
-    imageAlt: "under construction sign",
+    imageSrc: "/assets/PEX.png",
+    imageAlt: "PEX screenshot",
     githubUrl: "https://github.com/DevynJohnson/virtualPEX",
     projectUrl: "https://virtualpex.onrender.com",
     projectName: "Virtual PEX Board",
