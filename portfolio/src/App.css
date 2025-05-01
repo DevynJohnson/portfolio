@@ -5,49 +5,10 @@
   --accent-color: #477998;
 }
 
-/* Styling For Global Page Elements */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: block;
+#app-container {
+  display: flex;
   flex-direction: column;
-  font-family: 'Copperplate', 'fantasy', sans-serif;
-  width: 100%;
-  overflow-x: auto;
-  background-image: url('./images/bodyBackground.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-}
-
-@media (max-width: 768px) {
-  main {
-    padding-top: 100px;
-    padding-bottom: 60px;
-  }
-}
-
-@media (max-width: 768px) {
-  footer {
-    position: relative;
-  }
-}
-
-@media (max-width: 768px) {
-
-  .profilePicContainer {
-      width: 50%;
-      height: 50%;
-      display: block;
-      margin: 0 auto;
-    }
-}
-
-@media (max-width: 512px) {
-  main {
-    padding-top: 130px; /* Increase this value as needed */
-  }
+  flex: 1;
 }
 
 .scrollWrapper {
@@ -65,7 +26,3 @@ html, body {
   width: 100%;
   box-sizing: border-box;
 }
-
-
-
-

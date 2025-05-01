@@ -36,3 +36,13 @@
   margin-top: 10px;
   text-align: center; /* Help center inline elements if needed */
 }
+
+@media (max-width: 768px) {
+  
+  .profilePicContainer {
+      width: 50%;
+      height: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+}

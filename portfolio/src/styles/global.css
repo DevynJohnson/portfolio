@@ -3,8 +3,9 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    display: block;
     font-family: 'Copperplate', 'fantasy', sans-serif;
-    overflow-x: hidden;
+    overflow-x: auto;
     background-image: url('../images/bodyBackground.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -20,7 +21,19 @@ html, body {
   /* Styling for the main content */
   main {
     flex-grow: 1;
-    padding-top: 170px; /* Adjusted for fixed header */
-    padding-bottom: 80px; /* Prevents overlap with footer */
+    padding-top: 170px;
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: 768px) {
+    main {
+      padding-top: 100px;
+      padding-bottom: 60px;
+    }
   }
   
+  @media (max-width: 512px) {
+    main {
+      padding-top: 130px;
+    }
+  }
