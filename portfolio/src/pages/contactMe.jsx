@@ -41,12 +41,12 @@ function ContactForm() {
 function ContactMe() {
   return (
     <div className='contactMePage'>
+      <h1>Let's Chat!</h1>
       <h4>
-        Please reach out if you are interested in discussing job opportunities, freelance projects requests,
-        collaborating on a project together, or have any questions for me! 
+        I am always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
       </h4>
       <h4>
-        You can connect with me on <a href="https://www.linkedin.com/in/devyn-johnson-a5259213b/"target="_blank">LinkedIn</a>, view my profile at <a href="https://www.github.com/DevynJohnson"target="_blank">Github</a>, or feel free to use the form below to easily create an email. Click the button below to send your form data to your favorite email client and send the message!
+        You can connect with me on <a href="https://www.linkedin.com/in/devyn-johnson-a5259213b/"target="_blank">LinkedIn</a>, view my profile at <a href="https://www.github.com/DevynJohnson"target="_blank">Github</a>, or feel free to use the form below to easily create an email. Click the button below to include the form data in a new message using your email client and hit send!
       </h4>
       <h4>I look forward to hearing from you!</h4>
       {ContactForm()}

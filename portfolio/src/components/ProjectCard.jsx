@@ -20,7 +20,7 @@ function ProjectCard({
       />
       <Card.Body>
         <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-          <img className="cardGithubLogo" src={githubDark} alt="GitHub logo" />
+          <img className="cardGithubLogo" src={githubDark} alt="GitHub logo" />{githubUrl}
         </a>
         <Card.Text className="projectCardName">
           <a href={projectUrl} target="_blank" rel="noopener noreferrer">

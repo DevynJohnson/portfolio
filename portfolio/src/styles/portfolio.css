@@ -26,10 +26,9 @@
   }
   
   .projectCardImage {
-    width: 100%;
-    /* max-width: 576px; */
-    height: auto;
-    object-fit: cover;
+    width: 100%; /* Ensure it fills the card's width */
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Crop the image to fit the dimensions */
     flex-shrink: 0;
   }
   
@@ -58,6 +57,9 @@
       max-width: 100%;
       height: auto;
     }
+    .projectCardImage {
+      height: 150px; /* Adjust height for smaller screens */
+    }
   }
 
   .cardGithubLogo {
@@ -72,4 +74,3 @@
   .cardGithubLogo:hover {
     filter: brightness(2.5);
   }
-  

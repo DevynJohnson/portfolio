@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
 /* Global styles for html and body */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     display: block;
-    font-family: 'Copperplate', 'fantasy', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Default font */
     /* overflow-x: auto; */
     background-image: url('../images/bodyBackground.jpg');
     background-size: cover;
@@ -21,19 +23,89 @@ html, body {
   /* Styling for the main content */
   main {
     flex-grow: 1;
-    padding-top: 170px;
+    padding-top: 190px;
     padding-bottom: 80px;
+    animation: fadeIn 1s ease-in-out;
   }
 
   @media (max-width: 768px) {
     main {
-      padding-top: 100px;
+      padding-top: 125px;
       padding-bottom: 60px;
     }
   }
   
-  @media (max-width: 512px) {
+  @media (max-width: 402px) {
     main {
-      padding-top: 130px;
+      padding-top: 180px;
+      padding-bottom: 60px;
     }
   }
+
+.card, .aboutMePhoto {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover, .aboutMePhoto:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth hover effect for links */
+a {
+  position: relative;
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: var(--accent-color);
+  left: 0;
+  bottom: -2px;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%; /* Underline effect on hover */
+}
+
+a:hover {
+  color: var(--accent-color);
+  text-shadow: 0px 0px 5px var(--accent-color);
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  letter-spacing: 1.5px; /* Slight spacing for headings */
+  line-height: 1.2; /* Compact line height for headings */
+  font-family: 'Playfair Display', serif; /* Headings font */
+}
+
+h1, h2, h3 {
+  animation: slideIn 0.8s ease-in-out;
+}
+
+p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Lighter shadow for paragraphs */
+  letter-spacing: 0.5px; /* Subtle spacing for paragraphs */
+  line-height: 1.6; /* Comfortable line height for body text */
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
