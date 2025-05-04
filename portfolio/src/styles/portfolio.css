@@ -1,15 +1,13 @@
 /* Portfolio Page Styles */
+
 .portfolioPage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    /* overflow-x: hidden; */
-    padding: 20px;
+    display: block;
+    padding: 0;
+    overflow-x: hidden;
     box-sizing: border-box;
   }
   
-  .portfolioPage h2,
+  .portfolioPage h1,
   .portfolioPage h5 {
     text-align: center;
     text-shadow: black 1px 2px 2px;
@@ -20,20 +18,20 @@
   
   /* Project Card Styles */
   .projectCard {
-    width: clamp(280px, 90%, 36rem); /* Adjust width for smaller screens */
-    margin: 1rem auto; /* Center the card horizontally */
+    width: clamp(280px, 90%, 36rem);
+    margin: 1rem auto;
     flex-shrink: 1;
     display: flex;
-    flex-direction: column; /* Stack content vertically */
-    justify-content: space-between; /* Ensure proper spacing between elements */
-    box-sizing: border-box; /* Include padding and border in width/height */
-    overflow: hidden; /* Prevent content from overflowing the card */
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: hidden; 
   }
   
   .projectCardImage {
-    width: 100%; /* Ensure it fills the card's width */
-    height: 200px; /* Set a fixed height for uniformity */
-    object-fit: cover; /* Crop the image to fit the dimensions */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     flex-shrink: 0;
   }
   
@@ -53,15 +51,24 @@
   .projectCardTitle {
     text-shadow: white 1px 2px 2px;
   }
+
+  .scrollWrapper {
+    position: relative;
+    width: 100vw;                          
+    left: 50%;                             
+    transform: translateX(-50%);           
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
   
   /* Media Queries */
   @media (max-width: 600px) {
     .projectCard {
-      width: 100%; /* Full width on smaller screens */
-      margin: 0.5rem auto; /* Center the card horizontally */
+      width: 100%;
+      margin: 0.5rem auto;
     }
     .projectCardImage {
-      height: 150px; /* Adjust height for smaller screens */
+      height: 150px;
     }
   }
 
@@ -77,3 +84,30 @@
   .cardGithubLogo:hover {
     filter: brightness(2.5);
   }
+
+  @media (max-width: 487px) {
+    @media (max-width: 487px) {
+      .portfolioPage .row > [class*="col-"] {
+        padding-left: 0 !important;    
+        padding-right: 0 !important;
+        width: 100% !important;        
+        max-width: none !important;
+      }
+    
+      .portfolioPage .projectCard {
+        width: 100% !important;        
+        max-width: none !important;
+      }
+    }
+
+    .portfolioPage .container-fluid {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .scrollWrapper .row {
+      overflow-x: hidden;
+    }
+
+  }
+

@@ -62,8 +62,8 @@ const projectData = [
 function Portfolio() {
   return (
     <div className="portfolioPage">
-      <h2>Check out my work!</h2>
-      <h5 style={{ textAlign: "center" }}>
+      <h1>Check out my work!</h1>
+      <h5>
         Click on the project name to view the deployed project if applicable, or
         click the Github logo to see the repository.
       </h5>

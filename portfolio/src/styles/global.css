@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
 
 /* Global styles for html and body */
+* {
+  outline: 1px solid rgba(255, 0, 0, 0.3);
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -11,6 +15,10 @@ html, body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+  }
+
+  html {
+    overflow-y: scroll !important;
   }
 
   #root {
@@ -29,7 +37,7 @@ html, body {
 
   @media (max-width: 768px) {
     main {
-      padding-top: 125px;
+      padding-top: 175px;
       padding-bottom: 60px;
     }
   }

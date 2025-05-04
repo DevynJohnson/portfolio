@@ -11,7 +11,7 @@ function ProjectCard({
   projectDescription,
 }) {
   return (
-    <Card className="projectCard" style={{ width: "100%", maxWidth: "820px", margin: "0 auto" }}>
+    <Card className="projectCard mx-auto" style={{ maxWidth: "820px" }}>
       <Card.Img
         className="projectCardImage"
         variant="top"
@@ -19,16 +19,35 @@ function ProjectCard({
         alt={imageAlt}
       />
       <Card.Body>
-        <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-          <img className="cardGithubLogo" src={githubDark} alt="GitHub logo" />{githubUrl}
-        </a>
-        <Card.Text className="projectCardName">
-          <a href={projectUrl} target="_blank" rel="noopener noreferrer">
+        <div className="projectLinks mb-2">
+          <a
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="projectLink"
+          >
+            <img
+              className="cardGithubLogo"
+              src={githubDark}
+              alt="GitHub logo"
+            />
+            View Code
+          </a>
+        </div>
+
+        <Card.Text className="projectCardName mb-1">
+          <a
+            href={projectUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="projectTitle"
+          >
             {projectName}
           </a>
-          <Card.Text className="projectCardDescription">
-            {projectDescription}
-          </Card.Text>
+        </Card.Text>
+
+        <Card.Text className="projectCardDescription">
+          {projectDescription}
         </Card.Text>
       </Card.Body>
     </Card>
