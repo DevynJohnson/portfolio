@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    /* overflow-x: auto; */
+    /* overflow-x: hidden; */
     padding: 20px;
     box-sizing: border-box;
   }
@@ -20,9 +20,14 @@
   
   /* Project Card Styles */
   .projectCard {
-    width: clamp(280px, 80%, 36rem);
-    margin: 1rem;
+    width: clamp(280px, 90%, 36rem); /* Adjust width for smaller screens */
+    margin: 1rem auto; /* Center the card horizontally */
     flex-shrink: 1;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Ensure proper spacing between elements */
+    box-sizing: border-box; /* Include padding and border in width/height */
+    overflow: hidden; /* Prevent content from overflowing the card */
   }
   
   .projectCardImage {
@@ -51,11 +56,9 @@
   
   /* Media Queries */
   @media (max-width: 600px) {
-    .projectCard,
-    .projectCardImage {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
+    .projectCard {
+      width: 100%; /* Full width on smaller screens */
+      margin: 0.5rem auto; /* Center the card horizontally */
     }
     .projectCardImage {
       height: 150px; /* Adjust height for smaller screens */

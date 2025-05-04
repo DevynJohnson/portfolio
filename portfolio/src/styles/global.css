@@ -7,7 +7,6 @@ html, body {
     padding: 0;
     display: block;
     font-family: 'Roboto', sans-serif; /* Default font */
-    /* overflow-x: auto; */
     background-image: url('../images/bodyBackground.jpg');
     background-size: cover;
     background-attachment: fixed;

@@ -4,6 +4,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  max-width: 100%;
   z-index: 1000;
   display: flex;
   flex-direction: column;
@@ -33,27 +34,37 @@ header h1 {
   text-shadow: black 2px 1px 1px;
 }
 
+header h2 {
+  padding-bottom: 10px;
+  text-shadow: black 2px 1px 1px;
+}
+
 /* Navigation styling */
 .navbar-container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  margin-top: auto;
-  margin-bottom: -10px; /* Adjust spacing if needed */
+  margin: -10px auto; /* Center the navigation bar */
+  padding: auto 10px; /* Add padding to prevent overflow */
+  box-sizing: border-box; /* Ensure padding is included in width calculations */
 }
 
 .nav-tabs {
-  border-bottom: 2px solid white;
-  width: 100%;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap; /* Allow tabs to wrap to the next line if needed */
+  justify-content: center; /* Center-align the tabs */
+  gap: 5px; /* Add spacing between tabs */
+  width: 100%; /* Ensure the tabs span the full width of the container */
+  box-sizing: border-box;
 }
 
 .nav-tabs .nav-link {
-  font-size: 16px;
-  padding: 12px 20px;
+  font-size: 14px;
+  padding: 8px 12px;
+  flex: 1 1 auto;
   color: var(--accent-color);
+  text-align: center;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
@@ -116,4 +127,10 @@ header h1 {
     margin-top: auto;
     margin-bottom: -5px;
   }
+
+  .nav-tabs .nav-link {
+    font-size: 12px; /* Reduce font size */
+    padding: 6px 8px; /* Reduce padding */
+  }
+
 }
