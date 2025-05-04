@@ -20,17 +20,17 @@ function ProjectCard({
       />
       <Card.Body>
         <div className="projectLinks mb-2">
+          <img
+            className="cardGithubLogo"
+            src={githubDark}
+            alt="GitHub logo"
+          />
           <a
             href={githubUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="projectLink"
           >
-            <img
-              className="cardGithubLogo"
-              src={githubDark}
-              alt="GitHub logo"
-            />
             View Code
           </a>
         </div>

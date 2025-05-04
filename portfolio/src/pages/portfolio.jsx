@@ -63,10 +63,7 @@ function Portfolio() {
   return (
     <div className="portfolioPage">
       <h1>Check out my work!</h1>
-      <h5>
-        Click on the project name to view the deployed project if applicable, or
-        click the Github logo to see the repository.
-      </h5>
+      <h5>Below are some of the projects I have worked on. If you would like to see more click <a href="https://github.com/DevynJohnson?tab=repositories">here</a> to see all of my project repositories on Github.</h5>
       <div className="scrollWrapper">
         <Container fluid>
           <Row className="justify-content-start">
