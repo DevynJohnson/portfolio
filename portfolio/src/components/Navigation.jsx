@@ -3,17 +3,17 @@ import { Link, useLocation } from 'react-router-dom';
 import ThemeToggle from './ThemeToggle';
 
 const navigationItems = [
-  { path: '/', label: 'About Me' },
+  { path: '/', label: 'About' },
   { path: '/portfolio', label: 'Portfolio' },
-  { path: '/contact', label: 'Contact Me' },
-  { path: '/resume', label: 'View My Resume' }
+  { path: '/contact', label: 'Contact' },
+  { path: '/resume', label: 'Resume' }
 ];
 
 function Navigation() {
     const currentPage = useLocation().pathname;
 
     return (
-        <Navbar expand="lg" className="modern-navbar">
+        <Navbar className="modern-navbar">
             <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-toggler" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <div className="navbar-content">
