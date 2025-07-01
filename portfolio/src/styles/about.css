@@ -1,48 +1,317 @@
-/* About Me Page Styles */
-.aboutMePage {
-  margin: 10px;
-  padding: 5px;
-  color: var(--secondary-color);
+/* About Page Styles */
+.aboutPage {
+  min-height: 100vh;
+  padding: 3rem 0;
+  background: var(--background-gradient);
 }
 
-/* Common styles for text elements in About Me page */
-.aboutMePage p, .aboutMeHeader {
-  text-align: center;
-  text-shadow: black 1px 2px 2px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  padding: 5px;
-  font-size: 20px;
+/* Title Section */
+.aboutMe-title {
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 0.5rem;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-/* About Me header specific */
-.aboutMeHeader {
-  margin-bottom: 20px;
+.aboutMe-subtitle {
+  color: var(--text-muted);
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 2rem;
 }
 
-/* About Me photo styling */
-.aboutMePhoto {
-  display: block;
-  max-width: 250px;
-  border: 3px solid var(--accent-color);
-  border-radius: 10px;
-  margin: 10px auto;
+/* Dark mode override for subtitle */
+[data-theme="dark"] .aboutMe-subtitle {
+  color: var(--text-light);
 }
 
+/* Profile Photo */
 .profilePicContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
-  text-align: center; /* Help center inline elements if needed */
+  margin-bottom: 1rem;
 }
 
-@media (max-width: 768px) {
+.aboutMe-main-photo {
+  max-width: 120px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 3px solid var(--card-background);
+}
+
+.aboutMe-main-photo:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 40px var(--card-shadow);
+}
+
+/* Photo Gallery - Now uses page-content-card styling */
+.aboutMe-gallery-title {
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.aboutMe-gallery-item {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.aboutMe-gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+.aboutMe-gallery-photo {
+  width: 100%;
+  height: 375px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px var(--card-shadow);
+  transition: all 0.3s ease;
+  border: 3px solid var(--card-background);
+  background-color: var(--card-background);
+}
+
+/* Special handling for hockey image to prevent awkward cropping */
+.aboutMe-gallery-photo[alt*="hockey"], 
+.aboutMe-gallery-photo[alt*="Hockey"] {
+  object-position: center top;
+}
+
+/* Special handling for family beach photo */
+.aboutMe-gallery-photo[alt*="beach"], 
+.aboutMe-gallery-photo[alt*="Beach"] {
+  object-position: center;
+}
+
+/* Teaching photo - center focus */
+.aboutMe-gallery-photo[alt*="teaching"], 
+.aboutMe-gallery-photo[alt*="Teaching"],
+.aboutMe-gallery-photo[alt*="twins"],
+.aboutMe-gallery-photo[alt*="ABCs"] {
+  object-position: center;
+}
+
+.aboutMe-gallery-photo:hover {
+  box-shadow: 0 12px 30px var(--card-shadow);
+  transform: scale(1.02);
+}
+
+.aboutMe-gallery-caption {
+  margin-top: 0.75rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Legacy photo styles for backwards compatibility */
+.aboutMe-photo {
+  max-width: 375px;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 4px solid var(--card-background);
+}
+
+.aboutMe-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 60px var(--card-shadow);
+}
+
+/* Content Sections */
+.aboutMe-content {
+  background: var(--card-background);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 12px 40px var(--card-shadow);
+}
+
+.aboutMe-section {
+  margin-bottom: 2rem;
+}
+
+.aboutMe-section:last-child {
+  margin-bottom: 0;
+}
+
+.aboutMe-section-title {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid transparent;
+  background: var(--primary-gradient);
+  background-size: 50% 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  letter-spacing: 0.2px;
+}
+
+/* Dark mode override for section titles */
+[data-theme="dark"] .aboutMe-section-title {
+  color: var(--text-light);
+}
+
+.aboutMe-text {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+/* Call to Action Section */
+.aboutMe-cta {
+  background: var(--primary-gradient);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.aboutMe-closing {
+  color: white !important;
+  font-weight: 500;
+  text-align: center !important;
+  margin-bottom: 0;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Header with Profile Photo Layout */
+.page-header-with-photo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.profile-photo-left {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.page-header-text {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 120px; /* Ensure consistent height */
+}
+
+/* Responsive layout for header with photo */
+@media (max-width: 767.98px) {
+  .page-header-with-photo {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
   
-  .profilePicContainer {
-      width: 50%;
-      height: 50%;
-      display: block;
-      margin: 0 auto;
-    }
+  .page-header-text {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-header-with-photo {
+    gap: 0.75rem;
+    padding-bottom: 1rem;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+  .aboutMe-gallery-photo {
+    height: 400px; /* Slightly taller for better proportion on tablets */
+  }
+}
+
+@media (max-width: 767.98px) {
+  .aboutMePage {
+    padding: 2rem 0;
+  }
+  
+  .aboutMe-content {
+    margin-left: 0;
+    margin-top: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .aboutMe-main-photo {
+    max-width: 100px;
+  }
+  
+  .aboutMe-gallery-photo {
+    height: 425px; /* Taller to preserve full hockey image and maintain consistency */
+  }
+  
+  .aboutMe-section-title {
+    font-size: 1.2rem;
+  }
+  
+  .aboutMe-text {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .aboutMePage {
+    padding: 1.5rem 0;
+  }
+  
+  .aboutMe-content {
+    padding: 1.2rem;
+  }
+  
+  .aboutMe-main-photo {
+    max-width: 80px;
+  }
+  
+  .aboutMe-gallery-photo {
+    height: 400px; /* Good balance between showing full images and maintaining consistency */
+  }
+  
+  .aboutMe-cta {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutMe-gallery-photo {
+    height: 350px; /* Maintain reasonable size on very small screens */
+  }
+}
+
+/* Print Styles */
+@media print {
+  .aboutMePage {
+    background: white;
+    padding: 1rem 0;
+  }
+  
+  .aboutMe-content {
+    box-shadow: none;
+    border: 1px solid var(--border-color);
+  }
+  
+  .aboutMe-photo {
+    box-shadow: none;
+  }
 }

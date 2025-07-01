@@ -5,40 +5,74 @@ import Row from 'react-bootstrap/Row';
 import githubLogo from '../images/githubLogo.svg';
 import linkedinLogo from '../images/linkedinLogo.svg';
 import stackoverflowLogo from '../images/stackoverflowLogo.svg';
+import '../styles/footer.css';
 
 function Footer() {
+    const currentYear = new Date().getFullYear();
 
     return (
-
-        <footer className="d-flex align-items-center justify-content-center py-4">
-            
+        <footer className="footer">
             <Container>
-
-                <Row className="justify-content-center align-items-center text-center">
+                <Row className="justify-content-between align-items-center">
                     
-                    <Col xs={4} md={2} className="d-flex align-items-center justify-content-center">
-                        <a href="https://github.com/DevynJohnson"target="_blank">
-                            <Image alt="github logo" src={githubLogo} height="30" width="30" roundedCircle />
-                        </a>
+                    {/* Personal Branding - Stacked Together */}
+                    <Col xs={12} md={6} className="footer-content text-center text-md-start">
+                        <div className="footer-name">Devyn Johnson</div>
+                        <div className="footer-title">Full Stack Developer</div>
+                        <div className="footer-copyright">
+                            © {currentYear} All rights reserved
+                        </div>
                     </Col>
                     
-                    <Col xs={4} md={2} className="d-flex align-items-center justify-content-center">
-                        <a href="https://www.linkedin.com/in/devyn-johnson-a5259213b/"target="_blank">
-                            <Image alt="linkedin logo" src={linkedinLogo} height="30" width="30" roundedCircle />
-                        </a>
-                    </Col>
-                    
-                    <Col xs={4} md={2} className="d-flex align-items-center justify-content-center">
-                        <a href="https://stackoverflow.com/users/27557869/devyn-johnson"target="_blank">
-                            <Image alt="stack overflow logo" src={stackoverflowLogo} height="75" width="75" roundedCircle />
-                        </a>
-                    
+                    {/* Social Links */}
+                    <Col xs={12} md={6} className="footer-social text-center text-md-end">
+                        <div className="social-links">
+                            <a 
+                                href="https://github.com/DevynJohnson" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="social-link"
+                                aria-label="GitHub Profile"
+                            >
+                                <Image 
+                                    alt="GitHub" 
+                                    src={githubLogo} 
+                                    className="social-icon"
+                                />
+                            </a>
+                            
+                            <a 
+                                href="https://www.linkedin.com/in/devyn-johnson-a5259213b/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="social-link"
+                                aria-label="LinkedIn Profile"
+                            >
+                                <Image 
+                                    alt="LinkedIn" 
+                                    src={linkedinLogo} 
+                                    className="social-icon"
+                                />
+                            </a>
+                            
+                            <a 
+                                href="https://stackoverflow.com/users/27557869/devyn-johnson" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="social-link"
+                                aria-label="Stack Overflow Profile"
+                            >
+                                <Image 
+                                    alt="Stack Overflow" 
+                                    src={stackoverflowLogo} 
+                                    className="social-icon"
+                                />
+                            </a>
+                        </div>
                     </Col>
                 
                 </Row>
-            
             </Container>
-
         </footer>
     );
 }

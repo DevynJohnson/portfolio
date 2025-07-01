@@ -1,7 +1,56 @@
+/* Light Theme (Default) - Minnesota Wild Cream & Green Inspired */
 :root {
-    --background-color: #153131;
-    --secondary-color: #bb8d68;
-    --tertiary-color: #45CB85;
-    --accent-color: #477998;
-  }
+  --background-color: #ffffff;
+  --secondary-color: #2f5233;
+  --tertiary-color: #4a7c59;
+  --accent-color: #c8b99c;
+  
+  /* Cream and green color scheme inspired by Minnesota Wild */
+  --primary-gradient: linear-gradient(135deg, #2f5233 0%, #4a7c59 100%);
+  --secondary-gradient: linear-gradient(135deg, #c8b99c 0%, #d4c4a8 100%);
+  --background-gradient: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+  
+  --text-primary: #1a2e1d;
+  --text-secondary: #2f5233;
+  --text-muted: #6b7c6f;
+  --text-light: #ffffff;
+  
+  /* Cream cards on white background */
+  --card-background: #f9f6f0;
+  --card-shadow: rgba(47, 82, 51, 0.15);
+  --border-color: #e8e2d4;
+  
+  /* Header with cream background for separation */
+  --header-background: rgba(249, 246, 240, 0.95);
+  --header-text: #1a2e1d;
+  --nav-hover: rgba(47, 82, 51, 0.1);
+}
+
+/* Dark Theme - Complementary to cream & green */
+[data-theme="dark"] {
+  --background-color: #1a1a1a;
+  --secondary-color: #c8b99c;
+  --tertiary-color: #a8d5b0;
+  --accent-color: #4a7c59;
+  
+  /* Dark theme with cream and green accents */
+  --primary-gradient: linear-gradient(135deg, #c8b99c 0%, #d4c4a8 100%);
+  --secondary-gradient: linear-gradient(135deg, #4a7c59 0%, #5d8f6a 100%);
+  --background-gradient: linear-gradient(135deg, #1a202c 0%, #2d3441 100%);
+  
+  --text-primary: #d4c4a8;
+  --text-secondary: #e2e8f0;
+  --text-muted: #cbd5e0;
+  --text-light: #ffffff;
+  
+  /* Dark colors with cream and green touches */
+  --card-background: #374151;
+  --card-shadow: rgba(200, 185, 156, 0.25);
+  --border-color: #4b5563;
+  
+  /* Darker header for visual separation */
+  --header-background: rgba(31, 41, 55, 0.95);
+  --header-text: #d4c4a8;
+  --nav-hover: rgba(200, 185, 156, 0.15);
+}
   

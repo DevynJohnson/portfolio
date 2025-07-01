@@ -1,0 +1,215 @@
+/* Responsive Utilities */
+
+/* Responsive Typography */
+.responsive-text-sm {
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+}
+
+.responsive-text-md {
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+}
+
+.responsive-text-lg {
+  font-size: clamp(1.2rem, 3vw, 1.4rem);
+}
+
+.responsive-text-xl {
+  font-size: clamp(1.6rem, 4vw, 2rem);
+}
+
+.responsive-text-xxl {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+/* Responsive Spacing */
+.responsive-padding-sm {
+  padding: clamp(0.5rem, 2vw, 1rem);
+}
+
+.responsive-padding-md {
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.responsive-padding-lg {
+  padding: clamp(1.5rem, 4vw, 3rem);
+}
+
+.responsive-margin-sm {
+  margin: clamp(0.5rem, 2vw, 1rem);
+}
+
+.responsive-margin-md {
+  margin: clamp(1rem, 3vw, 2rem);
+}
+
+.responsive-margin-lg {
+  margin: clamp(1.5rem, 4vw, 3rem);
+}
+
+/* Responsive Grid Gaps */
+.responsive-gap-sm {
+  gap: clamp(0.5rem, 2vw, 1rem);
+}
+
+.responsive-gap-md {
+  gap: clamp(1rem, 3vw, 2rem);
+}
+
+.responsive-gap-lg {
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+/* Container Max-widths for Better Control */
+.container-responsive {
+  max-width: 100%;
+  padding-left: clamp(1rem, 3vw, 2rem);
+  padding-right: clamp(1rem, 3vw, 2rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 576px) {
+  .container-responsive {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-responsive {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-responsive {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-responsive {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container-responsive {
+    max-width: 1320px;
+  }
+}
+
+/* Responsive Image Utilities */
+.img-responsive {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.img-responsive-contain {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive Flexbox Utilities */
+.flex-responsive {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(0.5rem, 2vw, 1rem);
+}
+
+.flex-responsive-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.5rem, 2vw, 1rem);
+}
+
+/* Mobile-First Hide/Show Utilities */
+.hide-mobile {
+  display: none;
+}
+
+.show-mobile {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .hide-mobile {
+    display: block;
+  }
+  
+  .show-mobile {
+    display: none;
+  }
+  
+  .hide-desktop {
+    display: none;
+  }
+  
+  .show-desktop {
+    display: block;
+  }
+}
+
+/* Responsive Button Sizing */
+.btn-responsive {
+  padding: clamp(0.4rem, 2vw, 0.6rem) clamp(0.8rem, 3vw, 1.2rem);
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  border-radius: clamp(0.25rem, 1vw, 0.5rem);
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .projectCard {
+    border: 2px solid #000;
+  }
+  
+  .projectCard-name a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .projectCard-description {
+    color: #000;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .portfolioPage {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: #ecf0f1;
+  }
+  
+  .projectCard {
+    background: #34495e;
+    color: #ecf0f1;
+  }
+  
+  .projectCard-name a {
+    color: #3498db;
+  }
+  
+  .projectCard-description {
+    color: #bdc3c7;
+  }
+  
+  .portfolioPage h2 {
+    color: #ecf0f1;
+  }
+  
+  .portfolioPage h5 {
+    color: #95a5a6;
+  }
+}

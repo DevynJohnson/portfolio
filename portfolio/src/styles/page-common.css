@@ -1,0 +1,163 @@
+/* Common Page Styles - Consistent across all pages */
+
+/* Page Wrapper */
+.page-wrapper {
+  min-height: calc(100vh - 200px); /* Account for header and footer */
+  padding: 0;
+  background: var(--background-gradient);
+  margin-top: 0; /* No additional margin - main padding handles spacing */
+}
+
+/* Page Container */
+.page-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Content Card - Consistent styling for all pages */
+.page-content-card {
+  background: var(--card-background);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 12px 40px var(--card-shadow);
+  border: 1px solid var(--border-color);
+  margin: 1.5rem;
+  width: calc(100% - 3rem);
+  box-sizing: border-box;
+}
+
+/* Page Title Section */
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-title {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: clamp(1.8rem, 4vw, 2.2rem);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 0.5rem;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+.page-content-card {
+  background: var(--card-background);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 12px 40px var(--card-shadow);
+  border: 1px solid var(--border-color);
+  margin: 1.5rem 1rem;
+  width: calc(100% - 2rem);
+  box-sizing: border-box;
+}
+
+/* Page Title Section */
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-title {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 0.5rem;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+
+.page-subtitle {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-muted);
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.3px;
+}
+
+/* Dark mode override for subtitle */
+[data-theme="dark"] .page-subtitle {
+  color: var(--text-light);
+}
+
+/* Page Text Styles */
+.page-text {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.page-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+  .page-wrapper {
+    padding: 0;
+    margin-top: 0;
+  }
+  
+  .page-content-card {
+    padding: 2rem;
+    margin: 0.75rem;
+    width: calc(100% - 1.5rem);
+  }
+  
+  .page-header {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .page-wrapper {
+    padding: 0;
+    margin-top: 0;
+  }
+  
+  .page-content-card {
+    padding: 1.5rem;
+    margin: 0.5rem;
+    width: calc(100% - 1rem);
+  }
+  
+  .page-header {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-wrapper {
+    margin-top: 0;
+  }
+  
+  .page-content-card {
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 0.25rem;
+    width: calc(100% - 0.5rem);
+  }
+  
+  .page-title {
+    font-size: clamp(1.8rem, 7vw, 2.2rem);
+  }
+  
+  .page-subtitle {
+    font-size: clamp(1rem, 4vw, 1.2rem);
+  }
+}
