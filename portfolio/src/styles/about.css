@@ -44,7 +44,12 @@
   border-radius: 15px;
   box-shadow: 0 8px 25px var(--card-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 3px solid var(--card-background);
+  border: 3px solid #2f5233; /* Dark border for light mode */
+}
+
+/* Dark mode - use light border for contrast */
+[data-theme="dark"] .aboutMe-main-photo {
+  border: 3px solid #c8b99c; /* Light cream border for dark mode */
 }
 
 .aboutMe-main-photo:hover {
@@ -77,8 +82,13 @@
   border-radius: 15px;
   box-shadow: 0 6px 20px var(--card-shadow);
   transition: all 0.3s ease;
-  border: 3px solid var(--card-background);
+  border: 3px solid #2f5233; /* Dark border for light mode */
   background-color: var(--card-background);
+}
+
+/* Dark mode - use light border for contrast */
+[data-theme="dark"] .aboutMe-gallery-photo {
+  border: 3px solid #c8b99c; /* Light cream border for dark mode */
 }
 
 /* Special handling for hockey image to prevent awkward cropping */
