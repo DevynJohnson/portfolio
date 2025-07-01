@@ -15,7 +15,7 @@ function Footer() {
             <Container>
                 <Row className="justify-content-between align-items-center">
                     
-                    {/* Personal Branding - Stacked Together */}
+                    {/* Personal Branding */}
                     <Col xs={12} md={6} className="footer-content text-center text-md-start">
                         <div className="footer-name">Devyn Johnson</div>
                         <div className="footer-title">Full Stack Developer</div>

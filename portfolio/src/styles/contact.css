@@ -157,7 +157,15 @@
 }
 
 [data-theme="dark"] .contactForm .text-muted {
-  color: var(--text-muted);
+  color: #ffffff;
+}
+
+[data-theme="dark"] .contactForm p.text-muted {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .contactForm p.text-muted small {
+  color: #ffffff;
 }
 
 [data-theme="dark"] .contactForm .btn-primary:disabled {
