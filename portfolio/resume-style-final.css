@@ -1,0 +1,166 @@
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #2f5233;
+    border-bottom: 3px solid #c8b99c;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    color: #4a7c59;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2f5233;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-left: 4px solid #c8b99c;
+    padding-left: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Hide contact table headers for cleaner look */
+table:first-of-type th {
+    display: none;
+}
+
+table:first-of-type {
+    border: none;
+}
+
+table:first-of-type td {
+    border: none;
+    padding: 5px 8px;
+}
+
+code {
+    background-color: #f5f5f5;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', 'Monaco', 'Lucida Console', monospace;
+}
+
+pre {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #c8b99c;
+    overflow-x: auto;
+}
+
+blockquote {
+    border-left: 4px solid #c8b99c;
+    margin: 15px 0;
+    padding-left: 15px;
+    font-style: italic;
+    color: #666;
+}
+
+.emoji {
+    font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #e0e0e0;
+    margin: 25px 0;
+}
+
+a {
+    color: #2f5233;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Print-specific styles */
+@media print {
+    body {
+        margin: 0;
+        padding: 15px;
+        font-size: 16px;
+    }
+    
+    /* Prevent awkward section breaks */
+    h1, h2, h3 {
+        page-break-after: avoid;
+        orphans: 3;
+        widows: 3;
+    }
+    
+    /* Keep project sections together */
+    h3 {
+        page-break-inside: avoid;
+    }
+    
+    /* Keep project content together */
+    h3 + p,
+    h3 + p + blockquote,
+    h3 + p + blockquote + ul {
+        page-break-inside: avoid;
+    }
+    
+    /* Keep each professional experience section together */
+    h3 + em,
+    h3 + em + p,
+    h3 + em + p + ul {
+        page-break-inside: avoid;
+    }
+    
+    /* Prevent table breaks */
+    table, tr, img, blockquote {
+        page-break-inside: avoid;
+    }
+    
+    /* Keep bullet point lists together */
+    ul {
+        page-break-inside: avoid;
+    }
+    
+    /* Better spacing for print */
+    h2 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    
+    /* Removed forced page breaks to see natural flow */
+    /* h2:nth-of-type(4) { /* Education section */
+    /*     page-break-before: always; */
+    /* } */
+    
+    /* h2:nth-of-type(6) { /* Additional Qualifications section */
+    /*     page-break-before: always; */
+    /* } */
+    
+    /* Hide any page break divs */
+    div[style*="page-break"] {
+        display: none !important;
+    }
+    
+    /* Improve readability */
+    body {
+        line-height: 1.5;
+    }
+}
