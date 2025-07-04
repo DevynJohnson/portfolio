@@ -1,5 +1,5 @@
 // Import all project images
-import get2KnowMeImg from "../images/view_passport_get2knowme.png";
+import get2KnowMeImg from "../images/get2knowme_screenshot.png";
 import pexImg from "../images/pex_animals.png";
 import realtorImg from "../images/realtorScreenshot.png";
 import readmeGenImg from "../images/readmeGenScreenshot.png";
