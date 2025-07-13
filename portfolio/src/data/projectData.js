@@ -1,5 +1,5 @@
 // Import all project images
-import get2KnowMeImg from "../images/get2knowme_screenshot.png";
+import get2KnowMeImg from "../images/get2knowme_homepage_screenshot.png";
 import pexImg from "../images/pex_animals.png";
 import realtorImg from "../images/realtorScreenshot.png";
 import readmeGenImg from "../images/readmeGenScreenshot.png";
@@ -12,10 +12,10 @@ export const projectData = [
     imageSrc: get2KnowMeImg,
     imageAlt: "screenshot of Get2KnowMe application",
     githubUrl: "https://github.com/DevynJohnson/Get2KnowMe",
-    projectUrl: "https://get2knowme.onrender.com/",
+    projectUrl: "https://get2know.me",
     projectName: "Get2KnowMe",
     projectDescription:
-    "An innovative accessibility-focused web application that empowers neurodivergent individuals to create personalized Communication Passports—comprehensive digital profiles that facilitate better social interactions and support. Users can document their specific diagnosis, preferred communication accommodations (such as speaking slowly, avoiding complex language, or steering clear of trigger topics), and emergency contact information for trusted support persons. The application features intuitive QR code generation and secure passcode access, enabling seamless sharing with any third party who may benefit from understanding the user's accommodation needs in social interactions. Currently developed in collaboration with NHS professionals in the UK, this project actively incorporates feedback from mental health experts across both the UK and US to ensure clinical relevance and user safety. The platform is designed to support individuals with autism, ADHD, AuDHD, OCD, Tourette's Syndrome, and other neurodivergent conditions, promoting greater independence, self-advocacy, and inclusive communication across all social contexts. This project demonstrates my commitment to developing technology that creates meaningful social impact while addressing real-world accessibility challenges in digital communication.",
+    `An accessibility-focused web application enabling neurodivergent individuals to create personalized Communication Passports—digital profiles that support better social interactions. Users can document health alerts, diagnoses, communication preferences, triggers, and emergency contacts, and securely share this information via QR code or passcode. Developed in close collaboration with the NHS professional who conceived the idea, I served as the sole developer for both the front-end and back-end, ensuring the platform met clinical and user needs. The app supports a range of neurodivergent and mental health conditions, promoting independence and inclusive communication.\n\nGet2KnowMe is fully GDPR and UK GDPR compliant, prioritizing user privacy and data protection. Features include explicit consent, data minimization, field-level encryption, secure password hashing, and robust parental consent for underage users. All personal data is encrypted in transit and at rest, and users can access or delete their data at any time. Only reputable, GDPR-compliant third-party processors are used, and no data is sold or shared for marketing. Full Privacy Policy and Terms of Service are available in the app and repository.`,
   },
   {
     id: 2,
