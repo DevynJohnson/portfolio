@@ -30,11 +30,11 @@ Specialty:    WCAG Guidelines • Assistive Technology • Inclusive Design
 
 ---
 
-## 💻 FEATURED PROJECTS
+## 🚀 FEATURED PROJECTS
 
 ### 1. Get2KnowMe | Accessibility-Focused Communication Platform
 **Stack:** `React` `Node.js` `Express.js` `MongoDB` `QR Generation`  
-**🌐 Live:** [get2know.me](https://get2know.me/) **|** **📂 Code:** [GitHub](https://github.com/DevynJohnson/Get2KnowMe)
+**🌐 Live:** [get2knowme.onrender.com](https://get2knowme.onrender.com/) **|** **📂 Code:** [GitHub](https://github.com/DevynJohnson/Get2KnowMe)
 
 > Innovative accessibility-focused web application empowering neurodivergent individuals to create personalized Communication Passports for improved social interactions.
 
@@ -42,8 +42,6 @@ Specialty:    WCAG Guidelines • Assistive Technology • Inclusive Design
 - ✅ **Collaborated with NHS professionals** in UK and mental health experts across US/UK to ensure clinical relevance and user safety  
 - ✅ **Designed comprehensive accommodation documentation** supporting autism, ADHD, AuDHD, OCD, Tourette's Syndrome, and other neurodivergent conditions
 - ✅ **Achieved meaningful social impact** by promoting independence, self-advocacy, and inclusive communication across all social interactions
-- ✅ **Ensured GDPR compliance** by adhering to privacy and security guidelines for responsible handling of sensitive user data
-
 
 ---
 
@@ -122,6 +120,10 @@ Specialty:    WCAG Guidelines • Assistive Technology • Inclusive Design
 | **Tools & Platforms** | Git/GitHub Version Control • VS Code • npm/yarn Package Management • Render • Insomnia • JSON Web Token • Command Line Interface |
 | **Accessibility & UX** | WCAG Guidelines • Assistive Technology Integration • Inclusive Design Principles • User Experience Optimization • QR Code Generation • Text-to-Speech Implementation |
 
+---
+
+<div style="page-break-before: always;"></div>
+
 ## 🎓 EDUCATION
 
 **Certificate, Full Stack Web Development**  
@@ -172,22 +174,18 @@ Managed front-of-house operations including staffing, scheduling, customer relat
 
 ---
 
+<div style="page-break-before: always;"></div>
+
 ## 🌟 ADDITIONAL QUALIFICATIONS
 
-### Leadership & Collaboration
-- **Cross-Functional Team Leadership:** Successfully led diverse teams across healthcare, food service, and technology sectors
-- **Stakeholder Management:** Collaborated with healthcare professionals, mental health experts, and multidisciplinary development teams
-- **Client Relationship Excellence:** Managed complex client projects from initial consultation through deployment and ongoing maintenance
+| Skill Area | Details |
+|------------|---------|
+| **Client Management** | Successfully managed client projects from consultation through deployment and ongoing maintenance |
+| **Cross-Functional Collaboration** | Worked with healthcare professionals, mental health experts, and multidisciplinary development teams |
+| **Accessibility Advocacy** | Passionate about creating inclusive technology for neurodivergent and disabled communities |
+| **Continuous Learning** | Actively pursuing emerging technologies, accessibility best practices, and industry standards |
+| **Problem-Solving** | Strong analytical skills with ability to break down complex challenges into manageable, actionable solutions |
 
-### Technical Innovation & Accessibility
-- **Accessibility Advocacy:** Passionate advocate for creating inclusive technology solutions for neurodivergent and disabled communities
-- **Emerging Technology Adoption:** Continuously researching and implementing modern web development practices and accessibility standards
-- **Problem-Solving Methodology:** Strong analytical approach to breaking down complex technical challenges into manageable, actionable solutions
-
-### Professional Development
-**Continuous Learning:** Actively pursuing advanced JavaScript frameworks, cloud technologies, and WCAG compliance best practices
-**Community Engagement:** Contributing to accessibility-focused development communities and maintaining awareness of industry trends
-**Collaboration Ready:** Eager to work with and learn from senior developers, contributing to a collaborative and growth-oriented team environment
-
+---
 
 *References available upon request*

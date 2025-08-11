@@ -325,24 +325,3 @@
     box-shadow: none;
   }
 }
-
-/* Responsive sizing for gallery photos on larger screens */
-@media (min-width: 1200px) {
-  .aboutMe-gallery-photo {
-    height: 450px; /* Increased from 375px for better visibility */
-  }
-}
-
-/* Large desktop screens - even larger images */
-@media (min-width: 1400px) {
-  .aboutMe-gallery-photo {
-    height: 590px; /* Increased from 540px */
-  }
-}
-
-/* Extra large screens (wide monitors) */
-@media (min-width: 1600px) {
-  .aboutMe-gallery-photo {
-    height: 650px; /* Increased from 600px */
-  }
-}

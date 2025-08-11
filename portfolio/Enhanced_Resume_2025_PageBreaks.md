@@ -3,9 +3,8 @@
 
 ---
 
-| Contact | Information |
-|---------|-------------|
 | 📧 | dljohnson1313@gmail.com |
+|---|---|
 | 📱 | (651) 238-6818 |
 | 🌐 | **Portfolio:** [devynjohnson.me](https://devynjohnson.me) |
 | 💼 | **LinkedIn:** [linkedin.com/in/devyn-johnson-a5259213b](https://www.linkedin.com/in/devyn-johnson-a5259213b/) |
@@ -30,11 +29,11 @@ Specialty:    WCAG Guidelines • Assistive Technology • Inclusive Design
 
 ---
 
-## 💻 FEATURED PROJECTS
+## 🚀 FEATURED PROJECTS
 
 ### 1. Get2KnowMe | Accessibility-Focused Communication Platform
 **Stack:** `React` `Node.js` `Express.js` `MongoDB` `QR Generation`  
-**🌐 Live:** [get2know.me](https://get2know.me/) **|** **📂 Code:** [GitHub](https://github.com/DevynJohnson/Get2KnowMe)
+**🌐 Live:** [get2knowme.onrender.com](https://get2knowme.onrender.com/) **|** **📂 Code:** [GitHub](https://github.com/DevynJohnson/Get2KnowMe)
 
 > Innovative accessibility-focused web application empowering neurodivergent individuals to create personalized Communication Passports for improved social interactions.
 
@@ -42,8 +41,6 @@ Specialty:    WCAG Guidelines • Assistive Technology • Inclusive Design
 - ✅ **Collaborated with NHS professionals** in UK and mental health experts across US/UK to ensure clinical relevance and user safety  
 - ✅ **Designed comprehensive accommodation documentation** supporting autism, ADHD, AuDHD, OCD, Tourette's Syndrome, and other neurodivergent conditions
 - ✅ **Achieved meaningful social impact** by promoting independence, self-advocacy, and inclusive communication across all social interactions
-- ✅ **Ensured GDPR compliance** by adhering to privacy and security guidelines for responsible handling of sensitive user data
-
 
 ---
 
@@ -122,6 +119,8 @@ Specialty:    WCAG Guidelines • Assistive Technology • Inclusive Design
 | **Tools & Platforms** | Git/GitHub Version Control • VS Code • npm/yarn Package Management • Render • Insomnia • JSON Web Token • Command Line Interface |
 | **Accessibility & UX** | WCAG Guidelines • Assistive Technology Integration • Inclusive Design Principles • User Experience Optimization • QR Code Generation • Text-to-Speech Implementation |
 
+<div style="page-break-before: always;"></div>
+
 ## 🎓 EDUCATION
 
 **Certificate, Full Stack Web Development**  
@@ -172,6 +171,8 @@ Managed front-of-house operations including staffing, scheduling, customer relat
 
 ---
 
+<div style="page-break-before: always;"></div>
+
 ## 🌟 ADDITIONAL QUALIFICATIONS
 
 ### Leadership & Collaboration
@@ -185,9 +186,10 @@ Managed front-of-house operations including staffing, scheduling, customer relat
 - **Problem-Solving Methodology:** Strong analytical approach to breaking down complex technical challenges into manageable, actionable solutions
 
 ### Professional Development
-**Continuous Learning:** Actively pursuing advanced JavaScript frameworks, cloud technologies, and WCAG compliance best practices
-**Community Engagement:** Contributing to accessibility-focused development communities and maintaining awareness of industry trends
-**Collaboration Ready:** Eager to work with and learn from senior developers, contributing to a collaborative and growth-oriented team environment
+- **Continuous Learning:** Actively pursuing advanced JavaScript frameworks, cloud technologies, and WCAG compliance best practices
+- **Community Engagement:** Contributing to accessibility-focused development communities and maintaining awareness of industry trends
+- **Mentorship Ready:** Prepared to guide junior developers and share knowledge in collaborative development environments
 
+---
 
 *References available upon request*
