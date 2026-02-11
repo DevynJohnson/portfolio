@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devyn Johnson - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Garamond', 'Times New Roman', serif;
+            line-height: 1.5;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+            font-size: 14px;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3a5f 0%, #475569 100%);
+            color: white;
+            padding: 35px 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-info {
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .summary {
+            background: #f8f9fa;
+            padding: 25px 40px;
+            margin: 0;
+            font-size: 0.98em;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section-title {
+            font-size: 1.4em;
+            color: #1e3a5f;
+            border-bottom: 3px solid #1e3a5f;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+        }
+
+        .experience-item {
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .job-title {
+            font-size: 1.05em;
+            font-weight: 700;
+            color: #1e3a5f;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .date {
+            font-size: 0.9em;
+            color: #666;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .company {
+            font-size: 0.98em;
+            color: #555;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .responsibilities {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .responsibilities li {
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 6px;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+        .responsibilities li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #1e3a5f;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 5px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .degree {
+            font-size: 0.98em;
+            font-weight: 700;
+            color: #1e3a5f;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .school {
+            font-size: 0.9em;
+            color: #555;
+            font-weight: 600;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px 30px;
+            margin-top: 15px;
+            list-style: none;
+        }
+
+        .skills-grid li {
+            font-size: 0.88em;
+        }
+
+        .skills-grid li:before {
+            content: "• ";
+            color: #1e3a5f;
+            font-weight: bold;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+            
+            .header {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                padding: 15px 30px;
+                page-break-after: avoid;
+                page-break-inside: avoid;
+            }
+            
+            .header h1 {
+                font-size: 1.6em;
+                margin-bottom: 6px;
+                letter-spacing: 1px;
+            }
+            
+            .contact-info {
+                font-size: 0.8em;
+                line-height: 1.3;
+            }
+            
+            .summary {
+                page-break-after: avoid;
+                page-break-inside: avoid;
+                page-break-before: avoid;
+                padding: 12px 30px;
+                font-size: 0.95em;
+                line-height: 1.5;
+            }
+            
+            .content {
+                padding: 20px 30px;
+            }
+            
+            .section {
+                margin-bottom: 20px;
+            }
+            
+            .section-title {
+                page-break-after: avoid;
+                font-size: 1.3em;
+                margin-bottom: 12px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px 25px;
+            }
+            
+            .skills-grid li {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content, .summary {
+                padding: 20px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .job-header, .education-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>DEVYN JOHNSON</h1>
+            <div class="contact-info">
+                6786 Saint Croix Trail South, Hastings MN 55033<br>
+                651-238-6818 • <a href="mailto:devynjohnson@hotmail.com">devynjohnson@hotmail.com</a>
+            </div>
+        </div>
+
+        <div class="summary">
+            Dedicated and results-oriented professional with nearly a decade of demonstrated success in supervisory roles. Known for effectively leading teams, driving operational efficiency, and delivering outstanding results in dynamic and fast-paced environments including restaurants, healthcare food service, and retail sales.
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">EXPERIENCE</h2>
+
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div class="job-title">Chef</div>
+                        <div class="date">December 2024 – Present</div>
+                    </div>
+                    <div class="company">Saint Therese of Woodbury – Woodbury MN</div>
+                    <ul class="responsibilities">
+                        <li>Prepare and serve meals for residents across a continuum of care, including memory care, transitional care (TCU), long-term care, assisted living, and independent living.</li>
+                        <li>Ensure all meals meet individual dietary needs, including texture modifications, allergy accommodations, and personal preferences.</li>
+                        <li>Responsible for thorough meal prep to support efficient service and maintain consistent quality.</li>
+                        <li>Follow standardized recipes that align with nutritional guidelines set by state and federal regulations, prioritizing both taste and health.</li>
+                        <li>Collaborate with dietary and care teams to provide a positive dining experience that supports residents' well-being.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div class="job-title">Owner/Operator</div>
+                        <div class="date">July 2024 – December 2024</div>
+                    </div>
+                    <div class="company">Buns of Wheel Burger Company LLC – Hastings MN</div>
+                    <ul class="responsibilities">
+                        <li>Owner and operator of Buns of Wheel Burger Company food truck operating in the Twin Cities metro area</li>
+                        <li>Ensure compliance with state and federal food safety laws and regulations as well as city and county level permits and licensing required to operate in any particular area</li>
+                        <li>Ensure compliance with collection and payment of state, county and local taxes</li>
+                        <li>Use of Quickbooks for company accounting including tracking and coding expenses and listing company assets and liabilities</li>
+                        <li>Creation of company SOPs, recipes, and cleaning schedules</li>
+                        <li>Creation and maintenance of marketing materials and social media presence</li>
+                        <li>General upkeep, cleaning and maintenance of the food truck and equipment</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div class="job-title">Campus Director of Nutrition</div>
+                        <div class="date">January 2022 – July 2024</div>
+                    </div>
+                    <div class="company">Martin Luther Care Center – Bloomington MN</div>
+                    <ul class="responsibilities">
+                        <li>Strategically plan, direct, and oversee all operations in a skilled nursing facility serving 130 residents with diverse levels of care and special dietary needs.</li>
+                        <li>Ensure compliance with state and federal food safety laws and regulations through meticulous menu development and implementation</li>
+                        <li>Expertly manage budget planning, record keeping, and billing to maintain financial accountability</li>
+                        <li>Lead recruitment, training, and supervision of a dedicated team of professionals including supervisors, Registered Dieticians, Dietary Aides and Chefs</li>
+                        <li>Provide hands-on support during understaffed periods, seamlessly transitioning into various roles such as cooking or serving meals</li>
+                        <li>Foster cross-departmental collaboration by coordinating food orders for special events and activities</li>
+                        <li>Collaborate closely with nursing and therapy departments to prioritize resident safety and cater to individual dietary restrictions</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div class="job-title">Restaurant Manager</div>
+                        <div class="date">June 2020 – January 2022</div>
+                    </div>
+                    <div class="company">B52's Burgers and Brew – Inver Grove Heights MN</div>
+                    <ul class="responsibilities">
+                        <li>Demonstrated expertise in managing budgetary allocations and ensuring optimal inventory levels for beer, liquor, and wine</li>
+                        <li>Oversaw and optimized daily front-of-house operations, effectively directing staff, and managing labor hours based on business volume</li>
+                        <li>Exhibited strong administrative skills through meticulous completion of accounting workbooks, scheduling, cash management, and inventory tracking.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div class="job-title">Shift Supervisor</div>
+                        <div class="date">May 2019 – June 2020</div>
+                    </div>
+                    <div class="company">3rd Act Craft Brewery – Woodbury MN</div>
+                    <ul class="responsibilities">
+                        <li>Simultaneously bartended and cooked while effectively supervising other bartending and cooking staff, as well as training newly hired employees in both bar and kitchen roles.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div class="job-title">General Manager</div>
+                        <div class="date">May 2017 – August 2019</div>
+                    </div>
+                    <div class="company">Green Mill Restaurant and Bar – Hastings MN</div>
+                    <ul class="responsibilities">
+                        <li>Oversaw store operations, ensuring optimal performance and profitability</li>
+                        <li>Conducted general bookkeeping including payroll reports, invoice coding, and accurate tracking of sales for Profit and Loss reports</li>
+                        <li>Developed comprehensive and costed schedules for all restaurant departments, facilitating accurate sales and labor forecasting on a weekly basis</li>
+                        <li>Managed food and catering supply procurement within budgetary constraints</li>
+                        <li>Scheduled store managers and kitchen staff to maintain efficient operations</li>
+                        <li>Handled booking and staffing of catering events, banquets, and weddings, both in-store and at off-site local venues</li>
+                        <li>Addressed guest complaints promptly and responded to online reviews</li>
+                        <li>Maintained cleanliness, performed general maintenance, and upheld upkeep standards</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">EDUCATION</h2>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <div>
+                            <div class="degree">B.S. Business Management</div>
+                            <div class="school">Western Governors University</div>
+                        </div>
+                        <div class="date">August 2018 – March 2022</div>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <div>
+                            <div class="degree">High School Diploma</div>
+                            <div class="school">Tartan Senior High School, Oakdale MN</div>
+                        </div>
+                        <div class="date">Graduated June 2006</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">SKILLS AND CERTIFICATIONS</h2>
+                <ul class="skills-grid">
+                    <li>Written and verbal communication</li>
+                    <li>ServSafe Certified Food Safety Manager</li>
+                    <li>Proficient in Microsoft Office</li>
+                    <li>State of Minnesota CFPM</li>
+                    <li>Extensive customer service experience</li>
+                    <li>Inventory and Budget Management</li>
+                    <li>Staff scheduling</li>
+                    <li>Bookkeeping and accounting</li>
+                    <li>Training and Development</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

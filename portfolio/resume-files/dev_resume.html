@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devyn Johnson - Full-Stack Web Developer</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #f5f5f5;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .header {
+        background: linear-gradient(135deg, #1e3a5f 0%, #475569 100%);
+        color: white;
+        padding: 40px;
+        text-align: center;
+      }
+
+      .header h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        font-weight: 700;
+      }
+
+      .header h2 {
+        font-size: 1.2em;
+        font-weight: 300;
+        margin-bottom: 20px;
+      }
+
+      .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+        font-size: 0.9em;
+      }
+
+      .contact-info a {
+        color: white;
+        text-decoration: none;
+        transition: opacity 0.3s;
+      }
+
+      .contact-info a:hover {
+        opacity: 0.8;
+      }
+
+      .content {
+        padding: 40px;
+      }
+
+      .section {
+        margin-bottom: 35px;
+      }
+
+      .section-title {
+        font-size: 1.8em;
+        color: #1e3a5f;
+        border-bottom: 3px solid #1e3a5f;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .summary {
+        background: #f8f9fa;
+        padding: 20px;
+        border-left: 4px solid #1e3a5f;
+        margin-bottom: 20px;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+        margin-top: 15px;
+      }
+
+      .skill-category {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 8px;
+        border-left: 3px solid #475569;
+      }
+
+      .skill-category h4 {
+        color: #1e3a5f;
+        margin-bottom: 8px;
+        font-size: 1em;
+      }
+
+      .skill-category p {
+        font-size: 0.9em;
+        line-height: 1.8;
+      }
+
+      .project {
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        transition: box-shadow 0.3s;
+      }
+
+      .project:hover {
+        box-shadow: 0 4px 12px rgba(30, 58, 95, 0.15);
+      }
+
+      .project-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .project-title {
+        font-size: 1.3em;
+        color: #333;
+        font-weight: 600;
+      }
+
+      .project-links {
+        display: flex;
+        gap: 15px;
+      }
+
+      .project-links a {
+        color: #1e3a5f;
+        text-decoration: none;
+        font-size: 0.9em;
+        font-weight: 500;
+      }
+
+      .project-links a:hover {
+        text-decoration: underline;
+      }
+
+      .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 10px 0;
+      }
+
+      .tech-badge {
+        background: #e8f0f7;
+        color: #1e3a5f;
+        padding: 4px 12px;
+        border-radius: 15px;
+        font-size: 0.85em;
+        font-weight: 500;
+      }
+
+      .project-description {
+        font-style: italic;
+        color: #555;
+        margin: 10px 0;
+        padding: 10px;
+        background: #fafafa;
+        border-left: 3px solid #1e3a5f;
+      }
+
+      .achievements {
+        list-style: none;
+        margin-top: 10px;
+      }
+
+      .achievements li {
+        padding-left: 25px;
+        position: relative;
+        margin-bottom: 8px;
+        font-size: 0.95em;
+      }
+
+      .achievements li:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #1e3a5f;
+        font-weight: bold;
+      }
+
+      .experience-item,
+      .education-item {
+        margin-bottom: 25px;
+      }
+
+      .experience-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 5px;
+        flex-wrap: wrap;
+      }
+
+      .job-title {
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #333;
+      }
+
+      .company {
+        color: #1e3a5f;
+        font-weight: 500;
+      }
+
+      .date-location {
+        color: #666;
+        font-size: 0.9em;
+        font-style: italic;
+      }
+
+      .qualifications-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 15px;
+        margin-top: 15px;
+      }
+
+      .qualification-item {
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      .qualification-item strong {
+        color: #1e3a5f;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      @media print {
+        body {
+          background: white;
+          padding: 0;
+        }
+
+        .container {
+          box-shadow: none;
+        }
+
+        .project:hover {
+          box-shadow: none;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .header h1 {
+          font-size: 2em;
+        }
+
+        .content {
+          padding: 20px;
+        }
+
+        .contact-info {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>DEVYN JOHNSON</h1>
+        <h2>
+          Full-Stack Web Developer | Software Engineer | Accessibility Advocate
+        </h2>
+        <div class="contact-info">
+          <span>📧 info@devynjohnsondigitalsolutions.com</span>
+          <span>📱 (651) 238-6818</span>
+          <span>📍 Hastings, MN 55033</span>
+        </div>
+        <div class="contact-info">
+          <a href="https://devynjohnson.me" target="_blank">Portfolio</a>
+          <a
+            href="https://www.linkedin.com/in/devyn-johnson-a5259213b/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/DevynJohnson" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="section">
+          <h3 class="section-title">Professional Summary</h3>
+          <div class="summary">
+            Results-driven Full-Stack Web Developer with a certificate in Full
+            Stack Development from the University of Minnesota (April 2025).
+            Backed by over a decade of leadership experience in business
+            operations, client relationship management, and cross-functional
+            collaboration. Proven track record of delivering client-focused
+            solutions from concept to deployment, with particular strength in
+            creating inclusive technology that addresses real-world
+            accessibility challenges. Known for working effectively with teams
+            to meet goals and drive results, excited to apply technical skills
+            to create user-centered applications that make a meaningful impact.
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4>Frontend</h4>
+              <p>
+                React • JavaScript ES6+ • TypeScript • HTML5 • CSS3 • Bootstrap
+                • Vite
+              </p>
+            </div>
+            <div class="skill-category">
+              <h4>Backend</h4>
+              <p>
+                Node.js • Express.js • RESTful APIs • GraphQL • CLI Applications
+              </p>
+            </div>
+            <div class="skill-category">
+              <h4>Databases</h4>
+              <p>
+                MongoDB • PostgreSQL • Mongoose • Database Design & Optimization
+              </p>
+            </div>
+            <div class="skill-category">
+              <h4>Tools</h4>
+              <p>Git/GitHub • Render • VS Code • npm/yarn • Insomnia • JWT</p>
+            </div>
+            <div class="skill-category">
+              <h4>Methods</h4>
+              <p>
+                Agile Development • CRUD Operations • Full-Stack Development
+              </p>
+            </div>
+            <div class="skill-category">
+              <h4>Specialty</h4>
+              <p>WCAG Guidelines • Assistive Technology • Inclusive Design</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3 class="section-title">Featured Projects</h3>
+
+          <div class="project">
+            <div class="project-header">
+              <div class="project-title">
+                Get2KnowMe | Accessibility-Focused Communication Platform
+              </div>
+              <div class="project-links">
+                <a href="https://get2knowme.onrender.com/" target="_blank"
+                  >🌐 Live</a
+                >
+                <a
+                  href="https://github.com/DevynJohnson/Get2KnowMe"
+                  target="_blank"
+                  >📂 Code</a
+                >
+              </div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">Express.js</span>
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">QR Generation</span>
+            </div>
+            <div class="project-description">
+              Innovative accessibility-focused web application empowering
+              neurodivergent individuals to create personalized Communication
+              Passports for improved social interactions.
+            </div>
+            <ul class="achievements">
+              <li>
+                Developed secure digital profile system with QR code generation
+                and passcode access for seamless sharing
+              </li>
+              <li>
+                Collaborated with NHS professionals in UK and mental health
+                experts across US/UK to ensure clinical relevance
+              </li>
+              <li>
+                Designed comprehensive accommodation documentation for autism,
+                ADHD, AuDHD, OCD, Tourette's, and more
+              </li>
+              <li>
+                Achieved meaningful social impact by promoting independence,
+                self-advocacy, and inclusive communication
+              </li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <div class="project-title">
+                Virtual PEX Board | Assistive Communication Technology
+              </div>
+              <div class="project-links">
+                <a href="https://virtualpex.onrender.com" target="_blank"
+                  >🌐 Live</a
+                >
+                <a
+                  href="https://github.com/DevynJohnson/virtualPEX"
+                  target="_blank"
+                  >📂 Code</a
+                >
+              </div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-badge">MERN</span>
+              <span class="tech-badge">Vite</span>
+              <span class="tech-badge">Bootstrap</span>
+              <span class="tech-badge">Express</span>
+              <span class="tech-badge">JWT</span>
+              <span class="tech-badge">Mongoose</span>
+            </div>
+            <div class="project-description">
+              Virtual picture exchange communication board for non-verbal or
+              speech-delayed children to communicate wants and needs.
+            </div>
+            <ul class="achievements">
+              <li>
+                Led back-end development in collaborative group project,
+                creating server architecture and database connections
+              </li>
+              <li>
+                Architected scalable database with MongoDB and Mongoose for
+                storing communication vocabulary items
+              </li>
+              <li>
+                Developed React components enabling visual communication through
+                image selection interface
+              </li>
+              <li>
+                Implemented secure authentication using JSON Web Tokens for user
+                management and data protection
+              </li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <div class="project-title">
+                Professional Realtor Website | Client-Focused Business Solution
+              </div>
+              <div class="project-links">
+                <a href="https://www.elisejohnsonrealtor.com/" target="_blank"
+                  >🌐 Live</a
+                >
+                <a
+                  href="https://github.com/DevynJohnson/Real-Estate-Website"
+                  target="_blank"
+                  >📂 Code</a
+                >
+              </div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">Vite</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Bootstrap</span>
+              <span class="tech-badge">Express</span>
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">JWT</span>
+            </div>
+            <div class="project-description">
+              Professional website for Twin Cities-based realtor designed as
+              primary web presence with full-stack functionality.
+            </div>
+            <ul class="achievements">
+              <li>
+                Delivered complete digital transformation as sole author for
+                licensed real estate professional
+              </li>
+              <li>
+                Created direct integration with agent's Coldwell Banker profile
+                for seamless property browsing
+              </li>
+              <li>
+                Developed responsive design ensuring optimal user experience
+                across all devices and screen sizes
+              </li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <div class="project-title">
+                Zone Meet | Multi-Platform Appointment Booking System
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/DevynJohnson/appointmentsCalendar"
+                  target="_blank"
+                  >📂 Code</a
+                >
+                <!-- Optional: <a href="https://your-deployment-url.com" target="_blank">🌐 Live Demo</a> -->
+              </div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-badge">Next.js</span>
+              <span class="tech-badge">TypeScript</span>
+              <span class="tech-badge">PostgreSQL</span>
+              <span class="tech-badge">Prisma ORM</span>
+              <span class="tech-badge">OAuth 2.0</span>
+              <span class="tech-badge">JWT</span>
+              <span class="tech-badge">Tailwind CSS</span>
+              <span class="tech-badge">RESTful API</span>
+            </div>
+            <div class="project-description">
+              Full-stack enterprise appointment booking platform with real-time
+              multi-calendar integration, location-based scheduling, and
+              automated provider-customer workflow management.
+            </div>
+            <ul class="achievements">
+              <li>
+                Architected OAuth 2.0 integration with Microsoft Outlook, Google
+                Calendar, Apple Calendar, and Teams enabling real-time
+                bidirectional calendar synchronization across platforms
+              </li>
+              <li>
+                Engineered location-based booking system with geocoding,
+                allowing customers to schedule appointments when providers are
+                in their geographic service area
+              </li>
+              <li>
+                Built comprehensive provider dashboard with advanced
+                availability management, template-based scheduling, and
+                real-time calendar sync controls
+              </li>
+              <li>
+                Implemented secure JWT authentication system with CSRF
+                protection, rate limiting, and enterprise-grade token management
+                for multi-tenant architecture
+              </li>
+              <li>
+                Developed automated email notification system with actionable
+                buttons for streamlined booking confirmation workflow
+              </li>
+              <li>
+                Designed normalized PostgreSQL schema with Prisma ORM,
+                optimizing complex queries for calendar events, bookings, and
+                availability schedules
+              </li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <div class="project-title">
+                README Generator | Developer Productivity Tool
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/DevynJohnson/readmeGenerator"
+                  target="_blank"
+                  >📂 Code</a
+                >
+              </div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">Inquirer.js</span>
+              <span class="tech-badge">fs/promises</span>
+              <span class="tech-badge">Markdown</span>
+            </div>
+            <div class="project-description">
+              Command-line application automating the creation of detailed and
+              professional README files for projects.
+            </div>
+            <ul class="achievements">
+              <li>
+                Automated documentation workflow through dynamic content
+                generation based on user input
+              </li>
+              <li>
+                Built sophisticated CLI application with Inquirer.js for
+                interactive prompt sequences
+              </li>
+              <li>
+                Implemented file system operations using fs/promises for
+                efficient markdown file generation
+              </li>
+              <li>
+                Enhanced developer experience ensuring consistent professional
+                presentation across all projects
+              </li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <div class="project-title">
+                Rock, Paper, Scissors Showdown | Interactive Web Game
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://devynjohnson.github.io/RockPaperScissors/"
+                  target="_blank"
+                  >🌐 Live</a
+                >
+                <a
+                  href="https://github.com/DevynJohnson/RockPaperScissors"
+                  target="_blank"
+                  >📂 Code</a
+                >
+              </div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-badge">JavaScript ES6+</span>
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">Bootstrap</span>
+              <span class="tech-badge">Local Storage</span>
+            </div>
+            <div class="project-description">
+              Originally built as JavaScript logic challenge, expanded to
+              include frontend interface for web development fundamentals
+              practice.
+            </div>
+            <ul class="achievements">
+              <li>
+                Transformed core JavaScript challenge into fully-featured
+                responsive web application
+              </li>
+              <li>
+                Implemented local storage functionality for persistent game data
+                and user experience continuity
+              </li>
+              <li>
+                Designed responsive Bootstrap interface adapting seamlessly
+                across desktop and mobile devices
+              </li>
+              <li>
+                Applied fundamental web development concepts including DOM
+                manipulation and event handling
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3 class="section-title">Education</h3>
+
+          <div class="education-item">
+            <div class="experience-header">
+              <div>
+                <div class="job-title">
+                  Certificate, Full Stack Web Development
+                </div>
+                <div class="company">
+                  University of Minnesota, Minneapolis MN
+                </div>
+              </div>
+              <div class="date-location">April 2025</div>
+            </div>
+            <p>
+              Comprehensive training in modern web development technologies,
+              full-stack JavaScript, database design, and collaborative
+              development practices.
+            </p>
+          </div>
+
+          <div class="education-item">
+            <div class="experience-header">
+              <div>
+                <div class="job-title">B.S., Business Management</div>
+                <div class="company">
+                  Western Governors University, Salt Lake City UT
+                </div>
+              </div>
+              <div class="date-location">2018-2022</div>
+            </div>
+            <p>
+              Focus on business operations, leadership, and management
+              principles.
+            </p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3 class="section-title">Professional Experience</h3>
+
+          <div class="experience-item">
+            <div class="experience-header">
+              <div>
+                <div class="job-title">Owner/Operator</div>
+                <div class="company">Buns of Wheel Burger Company LLC</div>
+              </div>
+              <div class="date-location">Twin Cities, MN | 2024-Present</div>
+            </div>
+            <p>
+              Founder and sole operator of Twin Cities-based food truck
+              specializing in smashburgers and Midwest-themed specialty burgers.
+            </p>
+            <ul class="achievements">
+              <li>
+                Independently manage all business operations including client
+                relationships, event booking, and regulatory compliance
+              </li>
+              <li>
+                Established comprehensive business systems including POS,
+                professional email, and branded social media presence
+              </li>
+              <li>
+                Drive community engagement through collaboration with local
+                businesses and co-hosted events
+              </li>
+              <li>
+                Maintain financial oversight including inventory management,
+                tracking, taxes, and reporting
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-header">
+              <div>
+                <div class="job-title">Campus Director of Nutrition</div>
+                <div class="company">Martin Luther Care Center</div>
+              </div>
+              <div class="date-location">Bloomington, MN | 2022-2024</div>
+            </div>
+            <p>
+              Led dietary department at skilled nursing facility serving
+              approximately 130 residents across transitional care, long-term
+              care, and memory care units.
+            </p>
+            <ul class="achievements">
+              <li>
+                Recognized with peer-to-peer award for fostering collaboration
+                between dietary and nursing departments within first six months
+              </li>
+              <li>
+                Redesigned meal service process to address resident concerns,
+                significantly improving food temperature and delivery timeliness
+              </li>
+              <li>
+                Overhauled dietary workflows and implemented structured cleaning
+                schedules for regulatory compliance
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-header">
+              <div>
+                <div class="job-title">Restaurant Manager</div>
+                <div class="company">B52's Burgers and Brews</div>
+              </div>
+              <div class="date-location">
+                Inver Grove Heights, MN | 2020-2022
+              </div>
+            </div>
+            <p>
+              Managed front-of-house operations including staffing, scheduling,
+              customer relations, and inventory for beer, wine, and liquor.
+            </p>
+            <ul class="achievements">
+              <li>
+                Enhanced customer satisfaction by actively supporting staff
+                during peak times
+              </li>
+              <li>
+                Demonstrated leadership flexibility by regularly filling
+                bartender and server roles
+              </li>
+              <li>
+                Maintained exceptional guest experiences through hands-on
+                approach and commitment to service excellence
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3 class="section-title">Additional Qualifications</h3>
+          <div class="qualifications-grid">
+            <div class="qualification-item">
+              <strong>Client Management</strong>
+              Successfully managed client projects from consultation through
+              deployment and ongoing maintenance
+            </div>
+            <div class="qualification-item">
+              <strong>Cross-Functional Collaboration</strong>
+              Worked with healthcare professionals, mental health experts, and
+              multidisciplinary development teams
+            </div>
+            <div class="qualification-item">
+              <strong>Accessibility Advocacy</strong>
+              Passionate about creating inclusive technology for neurodivergent
+              and disabled communities
+            </div>
+            <div class="qualification-item">
+              <strong>Continuous Learning</strong>
+              Actively pursuing emerging technologies, accessibility best
+              practices, and industry standards
+            </div>
+            <div class="qualification-item">
+              <strong>Problem-Solving</strong>
+              Strong analytical skills with ability to break down complex
+              challenges into actionable solutions
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

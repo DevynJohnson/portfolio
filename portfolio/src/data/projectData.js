@@ -4,7 +4,7 @@ import pexImg from "../images/pex_animals.png";
 import realtorImg from "../images/realtorScreenshot.png";
 import readmeGenImg from "../images/readmeGenScreenshot.png";
 import rpsImg from "../images/rpsScreenshot.png";
-import empTrackerImg from "../images/emp_tracker_screenshot.png";
+import zoneMeetImg from "../images/ZoneMeet_Screenshot.png";
 
 export const projectData = [
   {
@@ -59,12 +59,12 @@ export const projectData = [
   },
   {
     id: 6,
-    imageSrc: empTrackerImg,
-    imageAlt: "screenshot of employee tracker",
-    githubUrl: "https://github.com/DevynJohnson/employeeTracker",
-    projectUrl: "https://github.com/DevynJohnson/employeeTracker",
-    projectName: "Employee Tracker",
+    imageSrc: zoneMeetImg,
+    imageAlt: "screenshot of zone meet application",
+    githubUrl: "https://github.com/DevynJohnson/zoneMeet",
+    projectUrl: "https://www.zone-meet.com/",
+    projectName: "Zone-Meet",
     projectDescription:
-      "A comprehensive command-line interface application engineered for enterprise-level organizational data management, featuring complete CRUD (Create, Read, Update, Delete) operations for employee, department, and role administration. Developed from ground-up using a provided Entity Relationship Diagram (ERD), this project demonstrates full-stack database development expertise including PostgreSQL schema design, relational database architecture, and complex query optimization. The application leverages the Inquirer.js library to provide an intuitive, menu-driven user experience that guides administrators through data management workflows with input validation and error handling. Technical implementations include normalized database relationships, foreign key constraints, and optimized JOIN operations for efficient data retrieval across multiple related tables. This project serves as a foundational demonstration of database design principles, server-side JavaScript development, and enterprise application architecture—providing essential experience in data modeling, SQL operations, and business logic implementation that directly translates to full-stack web development and database administration roles.",
+      `A location-aware appointment booking platform designed for service providers who operate across multiple geographic locations, enabling clients to schedule appointments based on both where and when providers will be available. The system addresses a critical challenge for contractors, consultants, medical specialists, and other professionals serving clients across cities, states, or countries—coordinating complex, multi-location schedules without endless phone calls and email chains. Providers can manage multiple service locations, set recurring schedule patterns, and integrate with Outlook, Microsoft Teams, Google Calendar, and Apple iCloud to prevent double-bookings. Clients access their provider's real-time availability across all locations, filter by preferred area, and book instantly with automatic calendar confirmation.\n\nDeveloped as a custom solution for a contractor client working across multiple U.S. states, I served as the sole developer for the full-stack application. The platform features advanced availability controls allowing providers to define location-specific business hours, rotating schedules, and custom booking rules. Built with Next.js, TypeScript, Prisma ORM, and PostgreSQL, the application emphasizes security and reliability with CSRF protection, rate limiting via Upstash, JWT-based authentication with automatic token refresh, account lockout mechanisms, and comprehensive security monitoring. Calendar synchronization is achieved through OAuth 2.0 integrations with major calendar providers, ensuring seamless two-way sync of appointments and existing commitments.`,
   },
 ];
