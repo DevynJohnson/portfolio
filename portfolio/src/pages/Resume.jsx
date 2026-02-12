@@ -6,8 +6,8 @@ import "../styles/resume.css";
 
 function downloadResume() {
   const link = document.createElement("a");
-  link.href = "/assets/Devyn_Johnson_Resume_2025.pdf";
-  link.download = "Devyn_Johnson_Resume_2025.pdf";
+  link.href = "/assets/Devyn Johnson - Full-Stack Web Developer.pdf";
+  link.download = "Devyn Johnson - Full-Stack Web Developer.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
