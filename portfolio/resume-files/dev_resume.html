@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -31,6 +31,8 @@
         color: white;
         padding: 40px;
         text-align: center;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
       }
 
       .header h1 {
@@ -173,6 +175,8 @@
         border-radius: 15px;
         font-size: 0.85em;
         font-weight: 500;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
       }
 
       .project-description {
@@ -254,6 +258,11 @@
       }
 
       @media print {
+        * {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+
         body {
           background: white;
           padding: 0;
@@ -297,13 +306,13 @@
           <span>📍 Hastings, MN 55033</span>
         </div>
         <div class="contact-info">
-          <a href="https://devynjohnson.me" target="_blank">Portfolio</a>
+          <a href="https://devynjohnson.me" target="_blank">Portfolio: https://devynjohnson.me</a>
           <a
             href="https://www.linkedin.com/in/devyn-johnson-a5259213b/"
             target="_blank"
-            >LinkedIn</a
+            >LinkedIn: https://www.linkedin.com/in/devyn-johnson-a5259213b/</a
           >
-          <a href="https://github.com/DevynJohnson" target="_blank">GitHub</a>
+          <a href="https://github.com/DevynJohnson" target="_blank">GitHub: https://github.com/DevynJohnson</a>
         </div>
       </div>
 
@@ -369,7 +378,7 @@
                 Get2KnowMe | Accessibility-Focused Communication Platform
               </div>
               <div class="project-links">
-                <a href="https://get2knowme.onrender.com/" target="_blank"
+                <a href="https://get2know.me/" target="_blank"
                   >🌐 Live</a
                 >
                 <a
@@ -407,6 +416,68 @@
               <li>
                 Achieved meaningful social impact by promoting independence,
                 self-advocacy, and inclusive communication
+              </li>
+            </ul>
+          </div>
+
+           <div class="project">
+            <div class="project-header">
+              <div class="project-title">
+                Zone Meet | Multi-Platform Appointment Booking System
+              </div>
+              <div class="project-links">
+                <a href="https://zone-meet.com" target="_blank">🌐 Live</a>
+                <a
+                  href="https://github.com/DevynJohnson/appointmentsCalendar"
+                  target="_blank"
+                  >📂 Code</a
+                >
+              </div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech-badge">Next.js</span>
+              <span class="tech-badge">TypeScript</span>
+              <span class="tech-badge">PostgreSQL</span>
+              <span class="tech-badge">Prisma ORM</span>
+              <span class="tech-badge">OAuth 2.0</span>
+              <span class="tech-badge">JWT</span>
+              <span class="tech-badge">Tailwind CSS</span>
+              <span class="tech-badge">RESTful API</span>
+            </div>
+            <div class="project-description">
+              Full-stack enterprise appointment booking platform with real-time
+              multi-calendar integration, location-based scheduling, and
+              automated provider-customer workflow management.
+            </div>
+            <ul class="achievements">
+              <li>
+                Architected OAuth 2.0 integration with Microsoft Outlook, Google
+                Calendar, Apple Calendar, and Teams enabling real-time
+                bidirectional calendar synchronization across platforms
+              </li>
+              <li>
+                Engineered location-based booking system with geocoding,
+                allowing customers to schedule appointments when providers are
+                in their geographic service area
+              </li>
+              <li>
+                Built comprehensive provider dashboard with advanced
+                availability management, template-based scheduling, and
+                real-time calendar sync controls
+              </li>
+              <li>
+                Implemented secure JWT authentication system with CSRF
+                protection, rate limiting, and enterprise-grade token management
+                for multi-tenant architecture
+              </li>
+              <li>
+                Developed automated email notification system with actionable
+                buttons for streamlined booking confirmation workflow
+              </li>
+              <li>
+                Designed normalized PostgreSQL schema with Prisma ORM,
+                optimizing complex queries for calendar events, bookings, and
+                availability schedules
               </li>
             </ul>
           </div>
@@ -504,67 +575,7 @@
             </ul>
           </div>
 
-          <div class="project">
-            <div class="project-header">
-              <div class="project-title">
-                Zone Meet | Multi-Platform Appointment Booking System
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://github.com/DevynJohnson/appointmentsCalendar"
-                  target="_blank"
-                  >📂 Code</a
-                >
-                <!-- Optional: <a href="https://your-deployment-url.com" target="_blank">🌐 Live Demo</a> -->
-              </div>
-            </div>
-            <div class="tech-stack">
-              <span class="tech-badge">Next.js</span>
-              <span class="tech-badge">TypeScript</span>
-              <span class="tech-badge">PostgreSQL</span>
-              <span class="tech-badge">Prisma ORM</span>
-              <span class="tech-badge">OAuth 2.0</span>
-              <span class="tech-badge">JWT</span>
-              <span class="tech-badge">Tailwind CSS</span>
-              <span class="tech-badge">RESTful API</span>
-            </div>
-            <div class="project-description">
-              Full-stack enterprise appointment booking platform with real-time
-              multi-calendar integration, location-based scheduling, and
-              automated provider-customer workflow management.
-            </div>
-            <ul class="achievements">
-              <li>
-                Architected OAuth 2.0 integration with Microsoft Outlook, Google
-                Calendar, Apple Calendar, and Teams enabling real-time
-                bidirectional calendar synchronization across platforms
-              </li>
-              <li>
-                Engineered location-based booking system with geocoding,
-                allowing customers to schedule appointments when providers are
-                in their geographic service area
-              </li>
-              <li>
-                Built comprehensive provider dashboard with advanced
-                availability management, template-based scheduling, and
-                real-time calendar sync controls
-              </li>
-              <li>
-                Implemented secure JWT authentication system with CSRF
-                protection, rate limiting, and enterprise-grade token management
-                for multi-tenant architecture
-              </li>
-              <li>
-                Developed automated email notification system with actionable
-                buttons for streamlined booking confirmation workflow
-              </li>
-              <li>
-                Designed normalized PostgreSQL schema with Prisma ORM,
-                optimizing complex queries for calendar events, bookings, and
-                availability schedules
-              </li>
-            </ul>
-          </div>
+         
 
           <div class="project">
             <div class="project-header">
@@ -706,9 +717,107 @@
             <div class="experience-header">
               <div>
                 <div class="job-title">Owner/Operator</div>
+                <div class="company">Devyn Johnson Digital Solutions, LLC</div>
+              </div>
+              <div class="date-location">Hastings, MN | Dec 2025 - Present</div>
+            </div>
+            <p>Freelance web development and digital solutions.</p>
+            <ul class="achievements">
+              <li>
+                Successfully delivered custom web development projects for
+                clients in real estate and small business sectors
+              </li>
+              <li>
+                Create web-based applications using a variety of technologies and tools with a focus on accessibility and
+                user-centered design, solving real-world challenges for clients
+                and end-users
+              </li>
+              <li>
+                Manage all aspects of client projects from initial consultation
+                through deployment and ongoing maintenance
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-header">
+              <div>
+                <div class="job-title">General Manager</div>
+                <div class="company">The Quarry Taproom</div>
+              </div>
+              <div class="date-location">Hastings, MN | Feb 2026-Present</div>
+            </div>
+            <p>
+              Oversee operations of bar and restaurant - managing staff,
+              inventory, and customer experience to drive business success.
+            </p>
+            <ul class="achievements">
+              <li>
+                Manage daily operations of a high-volume restaurant and bar, including staff, inventory, and customer service to ensure smooth functioning and positive guest experiences.
+              </li>
+              <li>
+                Creation of comprehensive training materials and onboarding processes for new hires, resulting in improved staff performance and retention.
+              </li>
+              <li>
+                Ownership of key metrics including overall sales, inventory management, labor percentage, and financial reporting to drive informed business decisions and optimize profitability.
+              </li>
+              <li>
+                Lead community engagement initiatives, fostering strong relationships with local businesses and customers to enhance brand presence and drive repeat business.
+              </li>
+              <li>
+                Implement innovative marketing and operational strategies to attract new customers and retain existing ones, contributing to revenue growth and brand loyalty.
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="experience-item">
+            <div class="experience-header">
+              <div>
+                <div class="job-title">Chef</div>
+                <div class="company">Saint Therese of Woodbury</div>
+              </div>
+              <div class="date-location">Woodbury, MN | Dec 2024 - Feb 2026</div>
+            </div>
+            <p>
+             Meal prep and service for skilled nursing facility serving residents across
+              memory care, transitional care, long-term care, assisted living,
+              and independent living units.
+            </p>
+            <ul class="achievements">
+              <li>
+                Prepare and serve meals for residents across a continuum of
+                care, including memory care, transitional care (TCU), long-term
+                care, assisted living, and independent living.
+              </li>
+              <li>
+                Ensure all meals meet individual dietary needs, including
+                texture modifications, allergy accommodations, and personal
+                preferences.
+              </li>
+              <li>
+                Responsible for thorough meal prep to support efficient service
+                and maintain consistent quality.
+              </li>
+              <li>
+                Follow standardized recipes that align with nutritional
+                guidelines set by state and federal regulations, prioritizing
+                both taste and health.
+              </li>
+              <li>
+                Collaborate with dietary and care teams to provide a positive
+                dining experience that supports residents' well-being.
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="experience-header">
+              <div>
+                <div class="job-title">Owner/Operator</div>
                 <div class="company">Buns of Wheel Burger Company LLC</div>
               </div>
-              <div class="date-location">Twin Cities, MN | 2024-Present</div>
+              <div class="date-location">Twin Cities, MN | Jul 2024- Oct 2025</div>
             </div>
             <p>
               Founder and sole operator of Twin Cities-based food truck
@@ -740,7 +849,7 @@
                 <div class="job-title">Campus Director of Nutrition</div>
                 <div class="company">Martin Luther Care Center</div>
               </div>
-              <div class="date-location">Bloomington, MN | 2022-2024</div>
+              <div class="date-location">Bloomington, MN | Jan 2022 - Jul 2024</div>
             </div>
             <p>
               Led dietary department at skilled nursing facility serving
@@ -762,37 +871,6 @@
               </li>
             </ul>
           </div>
-
-          <div class="experience-item">
-            <div class="experience-header">
-              <div>
-                <div class="job-title">Restaurant Manager</div>
-                <div class="company">B52's Burgers and Brews</div>
-              </div>
-              <div class="date-location">
-                Inver Grove Heights, MN | 2020-2022
-              </div>
-            </div>
-            <p>
-              Managed front-of-house operations including staffing, scheduling,
-              customer relations, and inventory for beer, wine, and liquor.
-            </p>
-            <ul class="achievements">
-              <li>
-                Enhanced customer satisfaction by actively supporting staff
-                during peak times
-              </li>
-              <li>
-                Demonstrated leadership flexibility by regularly filling
-                bartender and server roles
-              </li>
-              <li>
-                Maintained exceptional guest experiences through hands-on
-                approach and commitment to service excellence
-              </li>
-            </ul>
-          </div>
-        </div>
 
         <div class="section">
           <h3 class="section-title">Additional Qualifications</h3>

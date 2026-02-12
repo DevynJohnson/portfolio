@@ -9,6 +9,7 @@ function ProjectCard({
   projectUrl,
   projectName,
   projectDescription,
+  techStack = [],
 }) {
   return (
     <Card className="projectCard h-100">
@@ -46,6 +47,15 @@ function ProjectCard({
             />
           </a>
         </div>
+        {techStack.length > 0 && (
+          <div className="tech-stack mb-3">
+            {techStack.map((tech, index) => (
+              <span key={index} className="tech-badge">
+                {tech}
+              </span>
+            ))}
+          </div>
+        )}
         <Card.Text className="projectCard-description flex-grow-1">
           {projectDescription}
         </Card.Text>
@@ -85,6 +95,7 @@ ProjectCard.propTypes = {
   projectUrl: PropTypes.string.isRequired,
   projectName: PropTypes.string.isRequired,
   projectDescription: PropTypes.string.isRequired,
+  techStack: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default ProjectCard;

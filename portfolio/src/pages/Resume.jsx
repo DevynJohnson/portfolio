@@ -18,7 +18,47 @@ function WorkHistory() {
     <Accordion flush className="work-history-accordion">
       <Accordion.Item eventKey="0">
         <Accordion.Header>
-          July 2024 - Present: Owner/Operator of Buns of Wheel Burger Company
+          February 2026 - Present | General Manager at The Quarry Taproom, Hastings MN
+        </Accordion.Header>
+        <Accordion.Body>
+        <ul>
+          <li>Manage daily operations of a high-volume restaurant and bar, including staff, inventory, and customer service to ensure smooth functioning and positive guest experiences.</li>
+          <li>Creation of comprehensive training materials and onboarding processes for new hires, resulting in improved staff performance and retention.</li>
+          <li>Ownership of key metrics including overall sales, inventory management, labor percentage, and financial reporting to drive informed business decisions and optimize profitability.</li>
+          <li>Lead community engagement initiatives, fostering strong relationships with local businesses and customers to enhance brand presence and drive repeat business.</li>
+          <li>Implement innovative marketing and operational strategies to attract new customers and retain existing ones, contributing to revenue growth and brand loyalty.</li>
+        </ul>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1">
+        <Accordion.Header>
+          December 2025 - Present | Owner/Operator at Devyn Johnson Digital Solutions, LLC, Hastings MN
+        </Accordion.Header>
+        <Accordion.Body>
+        <ul>
+          <li>Successfully delivered custom web development projects for clients in real estate and small business sectors.</li>
+          <li>Create web-based applications using a variety of technologies and tools with a focus on accessibility and user-centered design, solving real-world challenges for clients and end-users.</li>
+          <li>Manage all aspects of client projects from initial consultation through deployment and ongoing maintenance.</li>
+        </ul>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="2">
+        <Accordion.Header>
+          December 2024 - February 2026 | Chef at Saint Therese of Woodbury, Woodbury MN
+        </Accordion.Header>
+        <Accordion.Body>
+        <ul>
+          <li>Prepare and serve meals for residents across a continuum of care, including memory care, transitional care (TCU), long-term care, assisted living, and independent living.</li>
+          <li>Ensure all meals meet individual dietary needs, including texture modifications, allergy accommodations, and personal preferences.</li>
+          <li>Responsible for thorough meal prep to support efficient service and maintain consistent quality.</li>
+          <li>Follow standardized recipes that align with nutritional guidelines set by state and federal regulations, prioritizing both taste and health.</li>
+          <li>Collaborate with dietary and care teams to provide a positive dining experience that supports resident well-being.</li>
+        </ul>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="3">
+        <Accordion.Header>
+          July 2024 - Oct 2024 | Owner/Operator at Buns of Wheel Burger Company
         </Accordion.Header>
         <Accordion.Body>
         <ul>
@@ -31,9 +71,9 @@ function WorkHistory() {
         </ul>
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="1">
+      <Accordion.Item eventKey="4">
         <Accordion.Header>
-          January 2022 - July 2024: Campus Director of Nutrition at Martin Luther Care Center, Bloomington MN
+          January 2022 - July 2024 | Campus Director of Nutrition at Martin Luther Care Center, Bloomington MN
         </Accordion.Header>
         <Accordion.Body>
         <ul>
@@ -46,9 +86,9 @@ function WorkHistory() {
         </ul>
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="2">
+      <Accordion.Item eventKey="5">
         <Accordion.Header>
-          June 2020 - January 2022: Restaurant Manager at B52s Burgers and Brews, Inver Grove Heights MN
+          June 2020 - January 2022 | Restaurant Manager at B52s Burgers and Brews, Inver Grove Heights MN
         </Accordion.Header>
         <Accordion.Body>
         <ul>
@@ -59,9 +99,9 @@ function WorkHistory() {
         </ul>
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="3">
+      <Accordion.Item eventKey="6">
         <Accordion.Header>
-          May 2017 - August 2019: General Manager at Green Mill Restaurant and Bar, Hastings MN
+          May 2017 - August 2019 | General Manager at Green Mill Restaurant and Bar, Hastings MN
         </Accordion.Header>
         <Accordion.Body>
         <ul>
@@ -72,9 +112,9 @@ function WorkHistory() {
         </ul>
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="4">
+      <Accordion.Item eventKey="7">
         <Accordion.Header>
-          January 2014 - May 2017: Retail Support Specialist at Verizon Wireless, Bloomington MN
+          January 2014 - May 2017 | Retail Support Specialist at Verizon Wireless, Bloomington MN
         </Accordion.Header>
         <Accordion.Body>
         <ul>
