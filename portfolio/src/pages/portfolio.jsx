@@ -22,6 +22,11 @@ function Portfolio() {
                 <p className="portfolio-text">
                   Explore my collection of full-stack applications, each built with purpose and attention to accessibility. 
                   Click on project names or &quot;View Project&quot; to see deployed applications, or &quot;View Code&quot; to explore repositories.
+                  
+                </p>
+
+                <p className="portfolio-text" style={{ fontWeight: 'bold' }}>
+                  Note: Some live projects have been temporarily paused in order to save on hosting and maintenance costs during my relocation from Minnesota to Washington. Projects that are unavailable are indicated as such with a &quot;Temporarily Unavailable&quot; badge.
                 </p>
               </div>
 

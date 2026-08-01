@@ -56,12 +56,7 @@ function AboutMe() {
               <div className="aboutMe-section">
                 <h3 className="aboutMe-section-title">Beyond the Code</h3>
                 <p className="aboutMe-text">
-                  When I&apos;m not coding, you&apos;ll find me on our hobby farm with my wife and four 
-                  boys—two teenagers and twin toddlers who keep life wonderfully unpredictable. 
-                  I stay active playing ice hockey and enjoy the strategic thinking of Dungeons 
-                  & Dragons with friends. My background in food service management has honed my 
-                  ability to thrive in fast-paced environments and collaborate effectively with 
-                  diverse teams.
+                  Summer 2026 brought a big change for my family - my wife accepted a job opportunity that brought us from the Twin Cities area of Minnesota to the beautiful town of Friday Harbor, Washington located on San Juan Island. We have four wonderful sons (two teenagers and twin toddlers) and have enjoyed settling into our new community. When I am not out exploring our new home or at the playground with the kids, I will likely be found buried in a book, playing video games, or rolling some dice playing Dungeons & Dragons with my friends.
                 </p>
               </div>
 

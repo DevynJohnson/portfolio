@@ -10,9 +10,10 @@ function ProjectCard({
   projectName,
   projectDescription,
   techStack = [],
+  temporarilyUnavailable = false,
 }) {
   return (
-    <Card className="projectCard h-100">
+    <Card className={`projectCard h-100${temporarilyUnavailable ? " projectCard--unavailable" : ""}`}>
       <div className="projectCard-image-container">
         <Card.Img
           className="projectCard-image"
@@ -34,6 +35,9 @@ function ProjectCard({
               {projectName}
             </a>
           </Card.Title>
+          {temporarilyUnavailable && (
+            <span className="projectCard-badge">Temporarily Unavailable</span>
+          )}
           <a 
             href={githubUrl} 
             target="_blank" 
@@ -61,16 +65,27 @@ function ProjectCard({
         </Card.Text>
         <div className="projectCard-actions mt-auto pt-3">
           <div className="d-flex gap-2 flex-wrap">
-            <Button
-              variant="primary"
-              size="sm"
-              href={projectUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-fill"
-            >
-              View Project
-            </Button>
+            {temporarilyUnavailable ? (
+              <Button
+                variant="secondary"
+                size="sm"
+                className="flex-fill projectCard-unavailable-button"
+                disabled
+              >
+                Temporarily Unavailable
+              </Button>
+            ) : (
+              <Button
+                variant="primary"
+                size="sm"
+                href={projectUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-fill"
+              >
+                View Project
+              </Button>
+            )}
             <Button
               variant="outline-secondary"
               size="sm"
@@ -96,6 +111,7 @@ ProjectCard.propTypes = {
   projectName: PropTypes.string.isRequired,
   projectDescription: PropTypes.string.isRequired,
   techStack: PropTypes.arrayOf(PropTypes.string),
+  temporarilyUnavailable: PropTypes.bool,
 };
 
 export default ProjectCard;

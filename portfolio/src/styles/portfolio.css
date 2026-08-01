@@ -77,6 +77,15 @@
   border: 1px solid #2f5233; /* Dark border for light mode */
 }
 
+.projectCard--unavailable {
+  opacity: 0.78;
+  filter: grayscale(0.18) saturate(0.88);
+}
+
+.projectCard--unavailable:hover {
+  transform: translateY(-4px);
+}
+
 /* Dark mode - use light border for contrast */
 [data-theme="dark"] .projectCard {
   border: 1px solid #c8b99c; /* Light cream border for dark mode */
@@ -133,6 +142,27 @@
   border-bottom: 1px solid #e9ecef;
   padding-bottom: 1rem;
   margin-bottom: 1rem !important;
+}
+
+.projectCard-badge {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  background: #d7dbe0;
+  color: #4f5964;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+[data-theme="dark"] .projectCard-badge {
+  background: #4a4f56;
+  color: #f2f2f2;
 }
 
 .projectCard-name {
@@ -242,6 +272,30 @@
   box-shadow: 0 4px 12px var(--card-shadow);
   color: white;
   filter: brightness(1.1);
+}
+
+.projectCard-actions .btn-secondary,
+.projectCard-actions .projectCard-unavailable-button {
+  background: #8f98a1;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  text-shadow: none;
+}
+
+.projectCard-actions .btn-secondary:disabled,
+.projectCard-actions .projectCard-unavailable-button:disabled {
+  background: #a7afb7;
+  color: #f7f7f7;
+  opacity: 1;
+}
+
+.projectCard-actions .btn-secondary:hover,
+.projectCard-actions .projectCard-unavailable-button:hover {
+  background: #8f98a1;
+  color: #ffffff;
+  transform: none;
+  box-shadow: none;
 }
 
 .projectCard-actions .btn-outline-secondary {
